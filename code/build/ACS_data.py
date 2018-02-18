@@ -1,12 +1,16 @@
-from census import Census
-from us import states
 import requests
-import json
 import pandas as pd
-import numpy as np
-from mpl_toolkits.basemap import Basemap
-import matplotlib.pyplot as plt
 
+def generate_newvars(data):
+    '''
+    After getting data, generate new variables using existing variables.
+    The generated new variables are:
+        - Sex_ratio
+    '''
+        
+    data['Pov_rate'] = data['Num_in_pov'] / data['Num_pov_det']
+    
+    return data
 
 def query_data(filename):
 	'''
@@ -22,20 +26,30 @@ def query_data(filename):
     ST: State FIPS code
     B00001_001E: Total population
     B00002_001E: Total number of households
-    B01001_001E: Sex by age (total)
-    B10058_002E: In labor force
     B08201_001E: Household size
+    B15002_001E: Age 25 or over (serve as the universe for tabulating educational attainment)
+    B17001_001E: Number of persons for whom poverty status is determined
+    B17001_002E: Number of persons in poverty
+    B19013_001E: Median household income (in 2015 USD)
+    B19301_001E: Per capita income (in 2015 USD)
+    B25058_001E: Median rent value
+    B25077_001E: Median home value 
 	'''
 	## Generate query
 	varlist = [
 				"COUNTY", 
 				"NAME", 
 				"ST", 
-				"B00001_001E",
+                "B00001_001E",
 				"B00002_001E",
-				"B01001_001E",
-				"B10058_002E",
-				"B08201_001E"
+				"B08201_001E",
+                "B15002_001E", 
+                "B17001_001E",
+                "B17001_002E",
+                "B19013_001E",
+                "B19301_001E", 
+                "B25058_001E",
+                "B25077_001E"
 				]
 
 	varstring = "?get=" + ",".join(varlist) + "&for=county:*"
@@ -45,73 +59,29 @@ def query_data(filename):
 
 	r = requests.get(query_request)
 	acs_data = r.json()
-	varname_list = ['COUNTY', 'NAME', 'ST', 'Population', 'Sex', 'Num_household', 'Employed', \
-                    'Household_size', 'state', 'county']
+	varname_list = ['COUNTY', 'NAME', 'ST', 'Population', \
+                    'Num_household',  \
+                    'Household_size', 'Age25_over', \
+                    'Num_pov_det', 'Num_in_pov', \
+                    'Median_hhinc', 'Incpc', \
+                    'median_rent_value', 'median_home_value', \
+                    'state', 'county']
 
 	# Fron nexted list to pandas dataframe
 	data = pd.DataFrame(acs_data[1:], columns = varname_list)
 
-	numeric_varlist = ['Population', 'Sex', 'Num_household', 'Employed', 'Household_size']
+	numeric_varlist = ['Population', 'Num_household', \
+                       'Household_size', 'Age25_over', \
+                       'Num_pov_det', 'Num_in_pov', \
+                       'median_rent_value', 'median_home_value', \
+                       'Median_hhinc', 'Incpc']
 	for var in numeric_varlist:
 		data[var] = pd.to_numeric(data[var])
-   
+		print(var, data[var].mean())
+
+	data = generate_newvars(data)   
 	data.to_csv(filename, sep=',', encoding = 'utf-8')
 
-def draw_us_map():
-    # Set the lower left and upper right limits of the bounding box:
-    lllon = -119
-    urlon = -64
-    lllat = 22.0
-    urlat = 50.5
-    # and calculate a centerpoint, needed for the projection:
-    centerlon = float(lllon + urlon) / 2.0
-    centerlat = float(lllat + urlat) / 2.0
-
-    m = Basemap(resolution='i',  # crude, low, intermediate, high, full
-                llcrnrlon = lllon, urcrnrlon = urlon,
-                lon_0 = centerlon,
-                llcrnrlat = lllat, urcrnrlat = urlat,
-                lat_0 = centerlat,
-                projection='tmerc')
-
-    return m
-
-def plot_county_choropleth(datafile):
-	'''
-	Plot County Level Choropleth
-	'''
-	data = pd.read_csv(datafile)
-
-	fig, ax = plt.subplots(figsize=(10,20))
-
-	m.drawmapboundary(fill_color='#46bcec')
-	m.fillcontinents(color='#f2f2f2',lake_color='#46bcec')
-	m.drawcoastlines()
-	m.readshapefile('cb_2016_us_county_500k', 'counties', drawbounds=True)
-
-	df_poly = pd.DataFrame({
-	        'shapes': [Polygon(np.array(shape), True) for shape in m.counties],
-	        'COUNTY': [county['COUNTYFP'] for county in m.counties_info],
-	        'state': [county['STATEFP'] for county in m.counties_info]
-	    })
-
-	df_poly = df_poly.merge(data, on=['COUNTY', 'state'], how='left')
-
-	cmap = plt.get_cmap('Oranges')   
-	pc = PatchCollection(df_poly.shapes, zorder = 2)
-	norm = Normalize()
-
-	pc.set_facecolor(cmap(norm(df_poly['Sex_ratio'].fillna(0).values)))
-	ax.add_collection(pc)
-
-	mapper = plt.cm.ScalarMappable(norm=norm, cmap=cmap)
-
-	mapper.set_array(df_poly['Sex_ratio'])
-
-	plt.colorbar(mapper, shrink=0.4)
-	plt.show()
-
 if __name__ == "__main__":
-	filename = "ACS_data.txt"
-    query_data(filenmae)
-    plot_county_choropleth(filenmae)
+	filename = "../../data/ACS_data.txt"
+	query_data(filename)
