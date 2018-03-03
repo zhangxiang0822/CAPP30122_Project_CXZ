@@ -14,6 +14,22 @@ def generate_newvars(data):
     
     return data
 
+def request_data(varlist):
+    '''
+    Given a variable list, request data from that url
+    
+    
+    '''
+    varstring = "?get=" + ",".join(varlist) + "&for=county:*"
+    query_request = "https://api.census.gov/data/2015/acs5" + varstring
+
+    r = requests.get(query_request)
+    data_json = r.json()
+    
+    data = pd.DataFrame(data_json[1:], columns = data_json[0])
+    
+    return data
+    
 def query_unemp_data():
     '''
     This function queries information on employment status. 
@@ -80,26 +96,11 @@ def query_unemp_data():
                 'B23001_167E',  # Female unemployment 70 - 74 
                 'B23001_172E'   # Female unemployment 75+ 
                 ]
-    
-    varstring = "?get=" + ",".join(civilian_loborforce_varlist) + "&for=county:*"
-    
-    # Why using two query_request? ACS API only allow 50 variables per time
-    query_request = "https://api.census.gov/data/2015/acs5" + varstring
-
-    r = requests.get(query_request)
-    civilian_data_json = r.json()
-    
-    civilian = pd.DataFrame(civilian_data_json[1:], columns = civilian_data_json[0])
+ 
+    civilian = request_data(civilian_loborforce_varlist)
     civilian = civilian.drop(['state', 'county'], axis = 1)
     
-    varstring = "?get=" + ",".join(unemp_varlist) + "&for=county:*"
-
-    query_request = "https://api.census.gov/data/2015/acs5" + varstring
-
-    r = requests.get(query_request)
-    nunemp_data_json = r.json()
-    
-    nunemp = pd.DataFrame(nunemp_data_json[1:], columns = nunemp_data_json[0])
+    nunemp = request_data(unemp_varlist)
     nunemp = nunemp.drop(['state', 'county'], axis = 1)
     
     unemp_data = civilian
@@ -134,15 +135,8 @@ def query_poverty_data():
                 'B17001_032E', # Male, Income in the past 12 months at or above poverty level
                 'B17001_046E'  # Female
                 ]
-    varstring = "?get=" + ",".join(varlist) + "&for=county:*"
-
-    query_request = "https://api.census.gov/data/2015/acs5" + varstring
-    print(query_request)
-
-    r = requests.get(query_request)
-    poverty_data_json = r.json()
     
-    poverty_data = pd.DataFrame(poverty_data_json[1:], columns = poverty_data_json[0])
+    poverty_data = request_data(varlist)
     
     for var in varlist[3:]:
         poverty_data[var] = pd.to_numeric(poverty_data[var])
@@ -197,14 +191,8 @@ def query_education_data():
                 "B15002_034E", # Female Professional school degree
                 "B15002_035E", # Female Doctorate degree
             ]
-    varstring = "?get=" + ",".join(varlist) + "&for=county:*"
 
-    query_request = "https://api.census.gov/data/2015/acs5" + varstring
-
-    r = requests.get(query_request)
-    educ_data_json = r.json()
-    
-    educ_data = pd.DataFrame(educ_data_json[1:], columns = educ_data_json[0])
+    educ_data = request_data(varlist)
     
     for var in varlist[3:]:
         educ_data[var] = pd.to_numeric(educ_data[var])
@@ -274,15 +262,7 @@ def query_population_data():
                 "B01001_048E",  # Female 80 - 84
                 "B01001_049E",  # Female 85+
 				]
-    
-    varstring = "?get=" + ",".join(varlist) + "&for=county:*"
-
-    query_request = "https://api.census.gov/data/2015/acs5" + varstring
-
-    r = requests.get(query_request)
-    pop_data_json = r.json()
-    
-    pop_data = pd.DataFrame(pop_data_json[1:], columns = pop_data_json[0])
+    pop_data = request_data(varlist)   
     
     for var in varlist[3:]:
         pop_data[var] = pd.to_numeric(pop_data[var])
@@ -332,7 +312,6 @@ def query_data(filename):
 				"COUNTY", 
 				"NAME", 
 				"ST", 
-                "B01001_001E",
 				"B00002_001E",
 				"B08201_001E",
                 "B15002_001E", 
@@ -350,7 +329,7 @@ def query_data(filename):
 
 	r = requests.get(query_request)
 	acs_data = r.json()
-	varname_list = ['COUNTY', 'NAME', 'ST', 'Population', \
+	varname_list = ['COUNTY', 'NAME', 'ST', \
                     'Num_household',  \
                     'Household_size', 'Age25_over', \
                     'Num_pov_det', 'Num_in_pov', \
@@ -361,7 +340,7 @@ def query_data(filename):
 	# Fron nexted list to pandas dataframe
 	data = pd.DataFrame(acs_data[1:], columns = varname_list)
 
-	numeric_varlist = ['Population', 'Num_household', \
+	numeric_varlist = ['Num_household', \
                        'Household_size', 'Age25_over', \
                        'Num_pov_det', 'Num_in_pov', \
                        'median_rent_value', 'median_home_value', \
