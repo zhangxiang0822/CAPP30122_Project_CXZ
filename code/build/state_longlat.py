@@ -1,14 +1,15 @@
 import bs4
 import urllib3
+import csv
 
 # State abbreviation list is copy from the following website
 # http://ageekandhisblog.com/text-copy-friendly-list-of-us-states-and-abbreviation/
 
 STATE_ABBR_LIST = ["AL","AR","AZ","CA","CO","CT","DE","FL",\
                    "HI","IA","ID", "IL","IN","KY",\
-                   "MA","MD","ME","MI","MN","MO","MT", "MS", "NC","ND",\
-                   "NE","NM","NV","NY", "OH","OK","PA",\
-                   "RI","SC","SD","TN","TX","UT","VA","VT","WA",\
+                   "MA","MD","ME", "MI","MN","MO","MT", "MS", "NC","ND",\
+                   "NE","NM","NV", "OH","OK","PA",\
+                   "RI","SC","TN","TX","UT","VA","VT","WA",\
                    "WI","WV","WY"]
 
 def get_longlatrange(state, state_latlong_range):
@@ -54,23 +55,23 @@ def get_longlatrange(state, state_latlong_range):
     for pos in lat_position:
         if len(lat_list[pos - 2]) == 2:
             if len(lat_list[pos - 1]) == 2:
-                latitude = - int(lat_list[pos - 2][0:2]) \
-                            - int(lat_list[pos - 1][0:2])/ 100
+                latitude = int(lat_list[pos - 2][0:2]) \
+                           + int(lat_list[pos - 1][0:2])/ 100
             else:
-                latitude = - int(lat_list[pos - 2][0:2]) \
-                            - int(lat_list[pos - 1][0:1])/ 10
+                latitude = int(lat_list[pos - 2][0:2]) \
+                            + int(lat_list[pos - 1][0:1])/ 10
         elif len(lat_list[pos - 2]) == 3:
             if len(lat_list[pos - 1]) == 2:
-                latitude = - int(lat_list[pos - 2][0:3]) \
-                            - int(lat_list[pos - 1][0:2])/ 100
+                latitude = int(lat_list[pos - 2][0:3]) \
+                            + int(lat_list[pos - 1][0:2])/ 100
             else:
-                latitude = - int(lat_list[pos - 2][0:3]) \
-                            - int(lat_list[pos - 1][0:1])/ 10
+                latitude = int(lat_list[pos - 2][0:3]) \
+                            + int(lat_list[pos - 1][0:1])/ 10
         else:
             if len(lat_list[pos - 1]) == 2:
-                latitude = - int(lat_list[pos - 1][0:2])
+                latitude = int(lat_list[pos - 1][0:2])
             if len(lat_list[pos - 1]) == 3:
-                latitude = - int(lat_list[pos - 1][0:3])
+                latitude = int(lat_list[pos - 1][0:3])
                 
         lat_range.append(latitude)
       
@@ -112,6 +113,7 @@ for state in STATE_ABBR_LIST:
     get_longlatrange(state, state_latlong_range)
 
 # Hardcode severla states
+state_latlong_range["ak"] = [(54.40, 71.50), (-130, -173)]
 state_latlong_range["dc"] = [(38.89, 38.89), (-77.03, -77.03)]
 state_latlong_range["ga"] = [(30, 35),       (-81, -85)] 
 state_latlong_range["ks"] = [(37, 40),       (-94.38, -102.1)]   
@@ -119,8 +121,16 @@ state_latlong_range["la"] = [(29, 33),       (-89, -94)]
 state_latlong_range["mt"] = [(44.26, 49),    (-104.2, -116.2)]   
 state_latlong_range["nh"] = [(42.3, 45.18),  (-70.37, -72)]
 state_latlong_range["nj"] = [(38.55, 41.21), (-73.53, -75.35)]
+state_latlong_range["ny"] = [(40.29, 46),    (-71.47, -79.45)]
 state_latlong_range["or"] = [(42, 46.15),    (-116.45, -124.30)]
+state_latlong_range["sd"] = [(42.29, 45.56),    (-97.28, -104.30)]
 
-for index, item in state_latlong_range.items():
-    print(index, item)
+with open('../../data/state_longlat.csv', 'w', newline = '') as f:
+    writer = csv.writer(f, delimiter = ',')
+    fieldnames = ['state', 'lat_range_low', 'lat_range_high', \
+                  'long_range_low', 'long_range_high']
+    writer.writerow(fieldnames)
+    for key, value in state_latlong_range.items():
+        data= [key, value[0][0], value[0][1], value[1][0], value[1][1]]
+        writer.writerow(data)
     
