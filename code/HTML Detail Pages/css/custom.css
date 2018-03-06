@@ -19,7 +19,9 @@ h3,
 h4, 
 h5, 
 h6 {
-	color: #dd845a;
+	color:#E8E5E6;
+    font-family: 'Krona One', sans-serif;
+	padding-top:5px;
 	}
 
 table, th, td {
@@ -27,19 +29,24 @@ table, th, td {
 }
 th {
     padding: 7px;
+	font-size: 22px;
+	font-family:'Merriweather', serif;
+	color: black;
+	text-shadow: 1px 1px 8px Lightgray;
+    text-decoration: none;
 }
 
 td {
     padding: 4px;
+	font-family: 'Merriweather', serif;
 }
 
-th {
-	font-size: 24px;
-}
 
 p {
-	font-size: 18px;
-	color: 'black'
+	font-size: 22px;
+	color:#E8E5E6 ;
+	font-family:'Lobster', cursive;
+	padding-bottom: 
 }
 
 .container {
@@ -85,7 +92,7 @@ p {
 	
 .feature {
 	background: url('/Users/winston/Desktop/CAPP30122_Project_CXZ/code/HTML Detail Pages/images/retirement.jpg');
-	background-position: right top;
+	background-position: right center;
 	background-size: cover;
 	background-color: #dd845a;
 	color: black;
@@ -98,7 +105,8 @@ p {
 
 .jumbotron {
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  padding-left: 20px;
   margin-bottom: 0px;
   color: inherit;
   background-color: #eee;
@@ -136,7 +144,8 @@ p {
   text-align: center;
   padding: 8px 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'Krona One', sans-serif;
 }
 
 .promo, .footer-map {
@@ -160,8 +169,8 @@ p {
 }
 
 .promo-item {
-    height: 350px;
-	width: 450px;
+    height: 325px;
+	width: 375px;
     line-height: 150px;
     text-align: center;
 }
@@ -340,5 +349,5 @@ fieldset[disabled] .btn-primary.active {
   border-color: sandybrown;
 }
 
-.floatLeft { width: 20%; float: left; }
+.floatLeft { width: 30%; float: left; }
 .floatRight {width: 70%; float: right; }
