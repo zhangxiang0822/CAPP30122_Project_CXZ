@@ -8,6 +8,7 @@ from matplotlib.colors import Normalize, LogNorm
 from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
 from mpl_toolkits.axes_grid1.inset_locator import mark_inset
 import time 
+import gc
 
 # http://basemaptutorial.readthedocs.io/en/latest/subplots.html
 
@@ -239,7 +240,10 @@ def plot_county_location(county_FIPS, data):
     figure_name = "../../output/county_location/county_loc_" + state + "_"+ \
                   county + ".png"
     fig.savefig(figure_name, bbox_inches='tight', format = 'png', dpi = 300)
-    plt.close()  
+    plt.close() 
+    
+    plt.clf()
+    del m, map2
     return 0
     
 if __name__ == "__main__":
@@ -261,17 +265,21 @@ if __name__ == "__main__":
     
     data= data.set_index("FIPS")
     
-    """
-    "21", "22", "23", "24", "25", "26", "27", "28",
-    "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39",
-    "40", "41", "42", "44", "45", "46", "47", "48", "49", "50", "51",
-    "53", "54", "55", "56"
-    """
+    state_list = ["25", "26", "27", "28", "29", "30", "31", "32", "33", "34", \
+                  "35", "36", "37", "38", "39", "40", "41", "42", "44", "45", \
+                  "46", "47", "48", "49", "50", "51", "53", "54", "55", "56"]
+    
+    count = 0
     for FIPS in FIPS_list:
-        if FIPS[0:2] in ["20"]:
-            start = time.clock()     
+        if FIPS[0:2] in state_list:
+            start = time.clock()   
+            count += 1
             plot_county_location(FIPS, data)
-            print(FIPS, time.clock() - start) 
+            print(FIPS, time.clock() - start, count) 
+            
+            if count == 100:
+                gc.collect()
+                count = 0
     
     """
     varlist = ["Median_hhinc", "median_rent_value", "median_home_value", \
