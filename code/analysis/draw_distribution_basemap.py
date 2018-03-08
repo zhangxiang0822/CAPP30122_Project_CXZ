@@ -5,6 +5,10 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Polygon
 from matplotlib.collections import PatchCollection
 from matplotlib.colors import Normalize, LogNorm
+from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
+from mpl_toolkits.axes_grid1.inset_locator import mark_inset
+
+# http://basemaptutorial.readthedocs.io/en/latest/subplots.html
 
 # https://matplotlib.org/basemap/api/basemap_api.html#mpl_toolkits.basemap.Basemap.drawrivers
 # conda install -c conda-forge basemap
@@ -24,8 +28,9 @@ GEOREGION = {
 def draw_us_map(map_type, state = None, county_info = None):
     if map_type == "USA":
         # lower left and upper right limits of the bounding box
-        lllon = -119
-        urlon = -64
+        # lllon = -119
+        lllon = -129
+        urlon = - 58
         lllat = 22.0
         urlat = 50.5
         
@@ -58,17 +63,17 @@ def draw_us_map(map_type, state = None, county_info = None):
                 lon_0 = centerlon,
                 llcrnrlat = lllat, urcrnrlat = urlat,
                 lat_0 = centerlat,
-                projection = 'tmerc')
+                projection = 'cyl')
 
     return m
 
-def plot_county_choropleth_bystate(datafile, varname, state):
+def plot_county_choropleth_bystate(varname, state):
 	'''
 	Plot County Level Choropleth
 	'''
 	print(state)
 	# clean data
-	data = pd.read_csv(datafile)
+	data = pd.read_csv("../../data/database_cleaned.csv", encoding='cp1252')
 	data['COUNTY'] = data['COUNTY'].astype(str)
 	data['state'] = data['state'].astype(str)
 
@@ -187,43 +192,65 @@ def plot_county_location(county_FIPS):
     
     data["FIPS"] = data["state"] + data["COUNTY"]
     data = data.set_index(['FIPS'])
+    
 
-    lllon = - data["Longitude"][county_FIPS] - 2       
-    urlon = - data["Longitude"][county_FIPS] + 2     
-    lllat = data["Latitude"][county_FIPS]  - 2 
-    urlat = data["Latitude"][county_FIPS]  + 2 
+    fig, ax = plt.subplots(figsize=(10, 10))
     
-    county_info = (lllon, urlon, lllat, urlat)
-
-    m = draw_us_map("county", county_info = county_info)
-    
-    # Draw a line around the map region
-    m.drawmapboundary(fill_color = '#46bcec')
-    m.fillcontinents(color = '#e2e0e0', lake_color='#46bcec')
-    m.drawcountries(linewidth = 0.2)
-    m.drawcoastlines()
-    m.drawrivers(linewidth = 1, linestyle='solid', color = '#46bcec')
-    m.drawstates(linewidth = 2, linestyle='solid', color = 'gray')
-    
+    m = draw_us_map(map_type = "USA")
+    m.drawmapboundary(fill_color = '#46bcec', linewidth = 0.2)
+    m.fillcontinents(color = '#FFF8DC',lake_color = '#46bcec')
+    m.drawcoastlines(linewidth = 0.2, color = "black")
+    m.drawstates(linewidth = 0.2, color = "black")    
     m.readshapefile('../../data/shapefile/US_county/cb_2016_us_county_20m', \
-                   'counties', drawbounds = True)
+                    'counties', drawbounds = True)
 
-    ax = plt.gca()
-  
-    for i, shape in enumerate(m.counties):
-        county_i_FIPS = m.counties_info[i]["STATEFP"] + m.counties_info[i]["COUNTYFP"]
+    lllon = - data["Longitude"][county_FIPS] - 1       
+    urlon = - data["Longitude"][county_FIPS] + 1     
+    lllat = data["Latitude"][county_FIPS]  - 1
+    urlat = data["Latitude"][county_FIPS]  + 1 
+    county_info = (lllon, urlon, lllat, urlat)
+    
+    axins = zoomed_inset_axes(ax, 6, loc = 4)
+    axins.set_xlim(lllon, urlon)
+    axins.set_ylim(lllat, urlat)
+
+    plt.xticks(visible = False)
+    plt.yticks(visible = False)
+    
+    map2 = draw_us_map(map_type = "county", county_info = county_info)
+    map2.drawmapboundary(fill_color = '#46bcec')
+    map2.fillcontinents(color = '#e2e0e0', lake_color='#46bcec')
+    map2.drawcountries(linewidth = 0.2)
+    map2.drawcoastlines()
+    map2.drawrivers(linewidth = 1, linestyle='solid', color = '#46bcec')
+    map2.drawstates(linewidth = 2, linestyle='solid', color = 'gray')
+
+    map2.readshapefile('../../data/shapefile/US_county/cb_2016_us_county_20m', \
+                   'counties', drawbounds = True)
+     
+    for i, shape in enumerate(map2.counties):
+        county_i_FIPS = map2.counties_info[i]["STATEFP"] + map2.counties_info[i]["COUNTYFP"]
 	     
         if county_i_FIPS == county_FIPS:
             color = "red"
         else:
             color = "#FFF8DC"
         poly = Polygon(shape, facecolor = color)
-        ax.add_patch(poly)
-    plt.show()           
+        axins.add_patch(poly)
+        
+    mark_inset(ax, axins, loc1 = 2, loc2 = 4,  \
+               fc = "red", ec = "red", linewidth = 2)
+    
+    state = str(int(county_FIPS[0:2]))
+    county = str(int(county_FIPS[2:]))
+    figure_name = "../../output/county_location/county_loc_" + state + "_"+ \
+                  county + ".png"
+    fig.savefig(figure_name, bbox_inches='tight', format = 'png', dpi = 300)
+    plt.close()          
     
 if __name__ == "__main__":
     
-    plot_county_location("06085")
+    plot_county_location("17031")
     
     """
     varlist = ["crime_rate"]
@@ -231,11 +258,11 @@ if __name__ == "__main__":
     for var in varlist:
         plot_county_choropleth(var)
     
-    
+    varname = "crime_rate"
     fips_abbr = pd.read_csv("../../data/state_FIPS_abbr.csv", dtype = str)
     
-    for key, item in GEOREGION.items():
-        for state in item:
-            statecode = fips_abbr.loc[fips_abbr["FIPS"] == state, "abbreviation"].iloc[0]
-            plot_county_choropleth_bystate(filename, varname, statecode)
+    # for key, item in GEOREGION.items():
+    for state in GEOREGION["West"]:
+        statecode = fips_abbr.loc[fips_abbr["FIPS"] == state, "abbreviation"].iloc[0]
+        plot_county_choropleth_bystate(varname, statecode)
     """

@@ -1,0 +1,612 @@
+<div>
+                    <table align = center class = "table" width = "70%" border = "1" frame = "void" 
+        			   rules = "rows">
+            		<thead>
+            			<th style="text-align: left;">Rank</th>
+            			<th style="text-align: left;">County</th>
+            			<th style="text-align: left;">State</th>
+            			<th style="text-align: right;">Poverty Rate (%)</th>
+            		</thead> 
+
+                     	<tr> 
+		<td align="left">1</td> 
+		<td align="left"><a href = "/28/63">Jefferson County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">0.49</td> 
+	</tr> 
+	<tr> 
+		<td align="left">2</td> 
+		<td align="left"><a href = "/22/35">East Carroll Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">0.48</td> 
+	</tr> 
+	<tr> 
+		<td align="left">3</td> 
+		<td align="left"><a href = "/46/31">Corson County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">0.46</td> 
+	</tr> 
+	<tr> 
+		<td align="left">4</td> 
+		<td align="left"><a href = "/46/95">Mellette County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">0.45</td> 
+	</tr> 
+	<tr> 
+		<td align="left">5</td> 
+		<td align="left"><a href = "/21/237">Wolfe County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.43</td> 
+	</tr> 
+	<tr> 
+		<td align="left">6</td> 
+		<td align="left"><a href = "/1/119">Sumter County</a></td> 
+		<td align="left"> Alabama</td> 
+		<td align="right">0.43</td> 
+	</tr> 
+	<tr> 
+		<td align="left">7</td> 
+		<td align="left"><a href = "/13/61">Clay County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.42</td> 
+	</tr> 
+	<tr> 
+		<td align="left">8</td> 
+		<td align="left"><a href = "/28/21">Claiborne County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">0.42</td> 
+	</tr> 
+	<tr> 
+		<td align="left">9</td> 
+		<td align="left"><a href = "/28/83">Leflore County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">0.42</td> 
+	</tr> 
+	<tr> 
+		<td align="left">10</td> 
+		<td align="left"><a href = "/13/37">Calhoun County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.42</td> 
+	</tr> 
+	<tr> 
+		<td align="left">11</td> 
+		<td align="left"><a href = "/21/147">McCreary County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.41</td> 
+	</tr> 
+	<tr> 
+		<td align="left">12</td> 
+		<td align="left"><a href = "/46/7">Bennett County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">0.41</td> 
+	</tr> 
+	<tr> 
+		<td align="left">13</td> 
+		<td align="left"><a href = "/48/229">Hudspeth County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">0.4</td> 
+	</tr> 
+	<tr> 
+		<td align="left">14</td> 
+		<td align="left"><a href = "/1/63">Greene County</a></td> 
+		<td align="left"> Alabama</td> 
+		<td align="right">0.4</td> 
+	</tr> 
+	<tr> 
+		<td align="left">15</td> 
+		<td align="left"><a href = "/21/51">Clay County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.4</td> 
+	</tr> 
+	<tr> 
+		<td align="left">16</td> 
+		<td align="left"><a href = "/48/47">Brooks County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">0.4</td> 
+	</tr> 
+	<tr> 
+		<td align="left">17</td> 
+		<td align="left"><a href = "/46/137">Ziebach County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">0.4</td> 
+	</tr> 
+	<tr> 
+		<td align="left">18</td> 
+		<td align="left"><a href = "/48/489">Willacy County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">0.39</td> 
+	</tr> 
+	<tr> 
+		<td align="left">19</td> 
+		<td align="left"><a href = "/51/750">Radford city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">0.39</td> 
+	</tr> 
+	<tr> 
+		<td align="left">20</td> 
+		<td align="left"><a href = "/13/259">Stewart County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.38</td> 
+	</tr> 
+	<tr> 
+		<td align="left">21</td> 
+		<td align="left"><a href = "/22/65">Madison Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">0.38</td> 
+	</tr> 
+	<tr> 
+		<td align="left">22</td> 
+		<td align="left"><a href = "/21/13">Bell County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.38</td> 
+	</tr> 
+	<tr> 
+		<td align="left">23</td> 
+		<td align="left"><a href = "/1/131">Wilcox County</a></td> 
+		<td align="left"> Alabama</td> 
+		<td align="right">0.38</td> 
+	</tr> 
+	<tr> 
+		<td align="left">24</td> 
+		<td align="left"><a href = "/35/31">McKinley County</a></td> 
+		<td align="left"> New Mexico</td> 
+		<td align="right">0.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">25</td> 
+		<td align="left"><a href = "/48/505">Zapata County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">0.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">26</td> 
+		<td align="left"><a href = "/28/11">Bolivar County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">0.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">27</td> 
+		<td align="left"><a href = "/13/59">Clarke County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">28</td> 
+		<td align="left"><a href = "/4/1">Apache County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">0.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">29</td> 
+		<td align="left"><a href = "/48/427">Starr County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">0.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">30</td> 
+		<td align="left"><a href = "/13/273">Terrell County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.36</td> 
+	</tr> 
+	<tr> 
+		<td align="left">31</td> 
+		<td align="left"><a href = "/28/151">Washington County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">0.36</td> 
+	</tr> 
+	<tr> 
+		<td align="left">32</td> 
+		<td align="left"><a href = "/38/85">Sioux County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">0.36</td> 
+	</tr> 
+	<tr> 
+		<td align="left">33</td> 
+		<td align="left"><a href = "/16/65">Madison County</a></td> 
+		<td align="left"> Idaho</td> 
+		<td align="right">0.36</td> 
+	</tr> 
+	<tr> 
+		<td align="left">34</td> 
+		<td align="left"><a href = "/38/79">Rolette County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">0.36</td> 
+	</tr> 
+	<tr> 
+		<td align="left">35</td> 
+		<td align="left"><a href = "/28/133">Sunflower County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">0.36</td> 
+	</tr> 
+	<tr> 
+		<td align="left">36</td> 
+		<td align="left"><a href = "/54/47">McDowell County</a></td> 
+		<td align="left"> West Virginia</td> 
+		<td align="right">0.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">37</td> 
+		<td align="left"><a href = "/22/107">Tensas Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">0.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">38</td> 
+		<td align="left"><a href = "/13/17">Ben Hill County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">39</td> 
+		<td align="left"><a href = "/55/78">Menominee County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">0.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">40</td> 
+		<td align="left"><a href = "/21/159">Martin County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">41</td> 
+		<td align="left"><a href = "/13/65">Clinch County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">42</td> 
+		<td align="left"><a href = "/1/47">Dallas County</a></td> 
+		<td align="left"> Alabama</td> 
+		<td align="right">0.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">43</td> 
+		<td align="left"><a href = "/51/595">Emporia city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">0.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">44</td> 
+		<td align="left"><a href = "/48/215">Hidalgo County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">0.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">45</td> 
+		<td align="left"><a href = "/17/3">Alexander County</a></td> 
+		<td align="left"> Illinois</td> 
+		<td align="right">0.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">46</td> 
+		<td align="left"><a href = "/5/107">Phillips County</a></td> 
+		<td align="left"> Arkansas</td> 
+		<td align="right">0.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">47</td> 
+		<td align="left"><a href = "/45/33">Dillon County</a></td> 
+		<td align="left"> South Carolina</td> 
+		<td align="right">0.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">48</td> 
+		<td align="left"><a href = "/48/61">Cameron County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">0.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">49</td> 
+		<td align="left"><a href = "/1/35">Conecuh County</a></td> 
+		<td align="left"> Alabama</td> 
+		<td align="right">0.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">50</td> 
+		<td align="left"><a href = "/28/105">Oktibbeha County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">0.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">51</td> 
+		<td align="left"><a href = "/38/5">Benson County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">0.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">52</td> 
+		<td align="left"><a href = "/48/507">Zavala County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">53</td> 
+		<td align="left"><a href = "/8/25">Crowley County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">54</td> 
+		<td align="left"><a href = "/46/71">Jackson County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">55</td> 
+		<td align="left"><a href = "/30/35">Glacier County</a></td> 
+		<td align="left"> Montana</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">56</td> 
+		<td align="left"><a href = "/13/261">Sumter County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">57</td> 
+		<td align="left"><a href = "/5/41">Desha County</a></td> 
+		<td align="left"> Arkansas</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">58</td> 
+		<td align="left"><a href = "/39/9">Athens County</a></td> 
+		<td align="left"> Ohio</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">59</td> 
+		<td align="left"><a href = "/13/31">Bulloch County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">60</td> 
+		<td align="left"><a href = "/21/25">Breathitt County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">61</td> 
+		<td align="left"><a href = "/13/81">Crisp County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">62</td> 
+		<td align="left"><a href = "/5/95">Monroe County</a></td> 
+		<td align="left"> Arkansas</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">63</td> 
+		<td align="left"><a href = "/21/121">Knox County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">64</td> 
+		<td align="left"><a href = "/51/660">Harrisonburg city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">0.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">65</td> 
+		<td align="left"><a href = "/35/57">Torrance County</a></td> 
+		<td align="left"> New Mexico</td> 
+		<td align="right">0.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">66</td> 
+		<td align="left"><a href = "/22/61">Lincoln Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">0.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">67</td> 
+		<td align="left"><a href = "/21/129">Lee County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">68</td> 
+		<td align="left"><a href = "/13/43">Candler County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">69</td> 
+		<td align="left"><a href = "/48/479">Webb County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">0.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">70</td> 
+		<td align="left"><a href = "/5/17">Chicot County</a></td> 
+		<td align="left"> Arkansas</td> 
+		<td align="right">0.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">71</td> 
+		<td align="left"><a href = "/37/155">Robeson County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">0.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">72</td> 
+		<td align="left"><a href = "/21/109">Jackson County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">73</td> 
+		<td align="left"><a href = "/13/33">Burke County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">74</td> 
+		<td align="left"><a href = "/1/99">Monroe County</a></td> 
+		<td align="left"> Alabama</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">75</td> 
+		<td align="left"><a href = "/37/189">Watauga County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">76</td> 
+		<td align="left"><a href = "/13/9">Baldwin County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">77</td> 
+		<td align="left"><a href = "/53/75">Whitman County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">78</td> 
+		<td align="left"><a href = "/37/165">Scotland County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">79</td> 
+		<td align="left"><a href = "/21/95">Harlan County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">80</td> 
+		<td align="left"><a href = "/13/163">Jefferson County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">81</td> 
+		<td align="left"><a href = "/21/135">Lewis County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">82</td> 
+		<td align="left"><a href = "/36/5">Bronx County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">83</td> 
+		<td align="left"><a href = "/13/95">Dougherty County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">84</td> 
+		<td align="left"><a href = "/22/41">Franklin Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">85</td> 
+		<td align="left"><a href = "/13/131">Grady County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">86</td> 
+		<td align="left"><a href = "/12/27">DeSoto County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">87</td> 
+		<td align="left"><a href = "/4/17">Navajo County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">88</td> 
+		<td align="left"><a href = "/13/107">Emanuel County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">89</td> 
+		<td align="left"><a href = "/22/29">Concordia Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">0.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">90</td> 
+		<td align="left"><a href = "/28/69">Kemper County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">91</td> 
+		<td align="left"><a href = "/17/77">Jackson County</a></td> 
+		<td align="left"> Illinois</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">92</td> 
+		<td align="left"><a href = "/13/141">Hancock County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">93</td> 
+		<td align="left"><a href = "/26/73">Isabella County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">94</td> 
+		<td align="left"><a href = "/13/243">Randolph County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">95</td> 
+		<td align="left"><a href = "/28/1">Adams County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">96</td> 
+		<td align="left"><a href = "/21/71">Floyd County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">97</td> 
+		<td align="left"><a href = "/13/265">Taliaferro County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">98</td> 
+		<td align="left"><a href = "/21/165">Menifee County</a></td> 
+		<td align="left"> Kentucky</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">99</td> 
+		<td align="left"><a href = "/45/89">Williamsburg County</a></td> 
+		<td align="left"> South Carolina</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">100</td> 
+		<td align="left"><a href = "/35/47">San Miguel County</a></td> 
+		<td align="left"> New Mexico</td> 
+		<td align="right">0.3</td> 
+	</tr> 
+	</table>
+	</div>

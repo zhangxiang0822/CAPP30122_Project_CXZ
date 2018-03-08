@@ -6,10 +6,10 @@ html {
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.42857143;   
 	margin: 0;
-	color: #959595;
+	color: #0D0D07;
 	background-color: #fff;
 }
 	
@@ -19,8 +19,35 @@ h3,
 h4, 
 h5, 
 h6 {
-	color: #dd845a;
+	color:#E8E5E6;
+    font-family: 'Krona One', sans-serif;
+	padding-top:5px;
 	}
+
+table, th, td {
+    border-collapse: collapse;
+}
+th {
+    padding: 7px;
+	font-size: 22px;
+	font-family:'Merriweather', serif;
+	color: black;
+	text-shadow: 1px 1px 8px Lightgray;
+    text-decoration: none;
+}
+
+td {
+    padding: 4px;
+	font-family: 'Merriweather', serif;
+}
+
+tr:hover {background-color:#f5f5f5;}
+p {
+	font-size: 20px;
+	color:#E8E5E6 ;
+	font-family:'Lobster', cursive;
+	padding-bottom: 
+}
 
 .container {
   padding-right: 15px;
@@ -28,6 +55,7 @@ h6 {
   margin-right: auto;
   margin-left: auto;
 }
+
 
 @media (min-width: 768px) {
   .container {
@@ -63,11 +91,11 @@ h6 {
 
 	
 .feature {
-	background: url('../images/nightlight.jpg');
-	background-position: top right;
+	background: url('/Users/winston/Documents/GitHub/CAPP30122_Project_CXZ/code/HTML Detail Pages/images/retirement.jpg');
+	background-position: right center;
 	background-size: cover;
 	background-color: #dd845a;
-	color: white;
+	color: black;
 	text-shadow: 1px 1px 8px black;
 	}
 
@@ -76,8 +104,9 @@ h6 {
 	}
 
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
   margin-bottom: 0px;
   color: inherit;
   background-color: #eee;
@@ -92,6 +121,18 @@ h6 {
 	padding-left: 15px;
 }
 
+.tablerow2 {
+	padding-left: 15px;
+	border:black, solid;
+}
+
+.tablecontent{
+	padding-left: 18px
+}
+
+.tablecontent a {
+	font-size: 30px
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -103,15 +144,16 @@ h6 {
   text-align: center;
   padding: 8px 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'Krona One', sans-serif;
 }
 
 .promo, .footer-map {
 	border-width: 1px;
-	border-color: black;
-	border-top-style: solid;
+	border-color: white;
+	border-top-style:solid;
 	border-bottom-style: solid;
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-bottom: 20px;
 	}
 
@@ -127,38 +169,44 @@ h6 {
 }
 
 .promo-item {
-    height: 200px;
-    line-height: 180px;
+    height: 325px;
+	width: 375px;
+    line-height: 150px;
     text-align: center;
 }
 
-.promo-item:hover {
+.promo-item_1 {
+    height: 300px;
+	width: 350px;
+    line-height: 150px;
+    text-align: center;
+}
+.promo-item: static{
     background-size: 110%; 
-    border: 5px solid black;
     line-height: 170px;
 }
 
 .promo-item h3 {
-    font-size: 20px;
+    font-size: 25px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right:-20px;
+  margin-left: -20px;
 }
 
 .item-1 {
-	background: url('../images/mung_beans.jpg');
+	background: url('persp-model_W18/persp-model_W18/CAPP30122_Project_CXZ/code/HTML/images/mung_beans.jpg');
 	}
 	
 .item-2 {
-	background: url('../images/coffee_beans_1.jpg');
+	background: url('persp-model_W18/persp-model_W18/CAPP30122_Project_CXZ/code/HTML/images/coffee_beans_1.jpg');
 	}
 	
 .item-3 {
-	background: url('../images/grapes.jpg');
+	background: url('persp-model_W18/persp-model_W18/CAPP30122_Project_CXZ/code/HTML/images/grapes.jpg');
 	}
 		
 .item-1,
@@ -191,7 +239,7 @@ h6 {
 .footer-map {
 	height: 300px;
 	width: 100%;
-	background: url('../images/map.jpg');
+	background: url('persp-model_W18/persp-model_W18/CAPP30122_Project_CXZ/code/HTML/images/map.jpg');
 	background-size: cover;
 	border-color: #ccc;
 	}
@@ -302,4 +350,4 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .floatLeft { width: 30%; float: left; }
-.floatRight {width: 60%; float: right; }
+.floatRight {width: 70%; float: right; }
