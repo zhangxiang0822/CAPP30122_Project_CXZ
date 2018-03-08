@@ -244,7 +244,7 @@ def plot_county_location(county_FIPS, data):
     
 if __name__ == "__main__":
 
-    """
+    
     data = pd.read_csv("../../data/database_cleaned.csv")
     
     data['COUNTY'] = data['COUNTY'].astype(str)
@@ -261,12 +261,12 @@ if __name__ == "__main__":
     
     data= data.set_index("FIPS")
     
-    
-    , "21", "22", "23", "24", "25", "26", "27", "28",
+    """
+    "21", "22", "23", "24", "25", "26", "27", "28",
     "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39",
     "40", "41", "42", "44", "45", "46", "47", "48", "49", "50", "51",
     "53", "54", "55", "56"
-    
+    """
     for FIPS in FIPS_list:
         if FIPS[0:2] in ["20"]:
             start = time.clock()     
@@ -281,7 +281,7 @@ if __name__ == "__main__":
     
     for var in varlist:
         plot_county_choropleth(var)
-    """
+    
     varname = "crime_rate"
     fips_abbr = pd.read_csv("../../data/state_FIPS_abbr.csv", dtype = str)
     
