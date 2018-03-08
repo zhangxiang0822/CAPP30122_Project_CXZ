@@ -265,21 +265,16 @@ if __name__ == "__main__":
     
     data= data.set_index("FIPS")
     
-    state_list = ["25", "26", "27", "28", "29", "30", "31", "32", "33", "34", \
+    state_list = ["29", "30", "31", "32", "33", "34", \
                   "35", "36", "37", "38", "39", "40", "41", "42", "44", "45", \
                   "46", "47", "48", "49", "50", "51", "53", "54", "55", "56"]
     
-    count = 0
     for FIPS in FIPS_list:
-        if FIPS[0:2] in state_list:
+        if FIPS[0:2] in ["29"]:
             start = time.clock()   
-            count += 1
             plot_county_location(FIPS, data)
-            print(FIPS, time.clock() - start, count) 
+            print(FIPS, time.clock() - start) 
             
-            if count == 100:
-                gc.collect()
-                count = 0
     
     """
     varlist = ["Median_hhinc", "median_rent_value", "median_home_value", \
