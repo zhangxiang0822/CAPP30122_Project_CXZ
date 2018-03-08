@@ -181,7 +181,7 @@ def plot_county_location(county_FIPS):
     '''
 
     # clean data
-    data = pd.read_csv("../../data/database_cleaned.csv", encoding='cp1252')
+    data = pd.read_csv("../../data/database_cleaned.csv")
     
     data['COUNTY'] = data['COUNTY'].astype(str)
     data['state'] = data['state'].astype(str)
@@ -249,8 +249,21 @@ def plot_county_location(county_FIPS):
     plt.close()          
     
 if __name__ == "__main__":
+    data = pd.read_csv("../../data/database_cleaned.csv")
     
-    plot_county_location("17031")
+    data['COUNTY'] = data['COUNTY'].astype(str)
+    data['state'] = data['state'].astype(str)
+
+    data.loc[data['COUNTY'].str.len() == 1, 'COUNTY'] = '00' + data.COUNTY
+    data.loc[data['COUNTY'].str.len() == 2, 'COUNTY'] = '0' + data.COUNTY
+    data.loc[data['state'].str.len() == 1, 'state']  = '0' + data.state
+    
+    data["FIPS"] = data["state"] + data["COUNTY"]
+    
+    FIPS_list = data['FIPS'].tolist()
+    
+    for FIPS in FIPS_list:
+        plot_county_location(FIPS)
     
     """
     varlist = ["crime_rate"]
