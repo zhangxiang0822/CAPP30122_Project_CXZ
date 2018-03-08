@@ -7,6 +7,7 @@ from matplotlib.collections import PatchCollection
 from matplotlib.colors import Normalize, LogNorm
 from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
 from mpl_toolkits.axes_grid1.inset_locator import mark_inset
+import time 
 
 # http://basemaptutorial.readthedocs.io/en/latest/subplots.html
 
@@ -46,14 +47,10 @@ def draw_us_map(map_type, state = None, county_info = None):
         urlon = data["long_range_low"][state] * 0.99
         lllat = data["lat_range_low"][state] * 0.99
         urlat = data["lat_range_high"][state] * 1.01
-        
-        print(lllon, urlon, lllat, urlat)
     
     if map_type == "county":
-        print(county_info)
         lllon, urlon, lllat, urlat = county_info[0], county_info[1], \
                                      county_info[2], county_info[3]
-        print(lllon, urlon, lllat, urlat)
         
     centerlon = float(lllon + urlon) / 2.0
     centerlat = float(lllat + urlat) / 2.0
@@ -138,7 +135,7 @@ def plot_county_choropleth(varname):
 
     m.drawmapboundary(fill_color='#46bcec')
     m.fillcontinents(color='#f2f2f2',lake_color='#46bcec')
-    m.drawcoastlines(fill_color='gray')
+    m.drawcoastlines()
     m.readshapefile('../../data/shapefile/US_county/cb_2016_us_county_20m', \
                     'counties', drawbounds = True)
 
@@ -156,7 +153,7 @@ def plot_county_choropleth(varname):
     
     value_min = np.log(df_poly[varname].quantile(q = 0.1))
     value_max = np.log(df_poly[varname].quantile(q = 0.9))
-    print(value_min, np.exp(value_min))
+
     norm = Normalize()
 
     pc.set_facecolor(cmap(norm(df_poly[varname].fillna(0).values)))
@@ -172,27 +169,13 @@ def plot_county_choropleth(varname):
     fig.savefig(figure_name, bbox_inches='tight', format = 'png', dpi = 300)
     plt.close()   
 
-def plot_county_location(county_FIPS):
+def plot_county_location(county_FIPS, data):
     '''
     Plot the location of a county
     
     Input:
     - county: (string) County FIPS code
     '''
-
-    # clean data
-    data = pd.read_csv("../../data/database_cleaned.csv")
-    
-    data['COUNTY'] = data['COUNTY'].astype(str)
-    data['state'] = data['state'].astype(str)
-
-    data.loc[data['COUNTY'].str.len() == 1, 'COUNTY'] = '00' + data.COUNTY
-    data.loc[data['COUNTY'].str.len() == 2, 'COUNTY'] = '0' + data.COUNTY
-    data.loc[data['state'].str.len() == 1, 'state']  = '0' + data.state
-    
-    data["FIPS"] = data["state"] + data["COUNTY"]
-    data = data.set_index(['FIPS'])
-    
 
     fig, ax = plt.subplots(figsize=(10, 10))
     
@@ -204,13 +187,23 @@ def plot_county_location(county_FIPS):
     m.readshapefile('../../data/shapefile/US_county/cb_2016_us_county_20m', \
                     'counties', drawbounds = True)
 
-    lllon = - data["Longitude"][county_FIPS] - 1       
-    urlon = - data["Longitude"][county_FIPS] + 1     
-    lllat = data["Latitude"][county_FIPS]  - 1
-    urlat = data["Latitude"][county_FIPS]  + 1 
+    # Western counties are larger
+    if data["Longitude"][county_FIPS] >= 95:
+        lllon = - data["Longitude"][county_FIPS] - 2.5       
+        urlon = - data["Longitude"][county_FIPS] + 2.5     
+        lllat = data["Latitude"][county_FIPS]  - 2.5
+        urlat = data["Latitude"][county_FIPS]  + 2.5 
+        zoom_time = 2.5
+    else:
+        lllon = - data["Longitude"][county_FIPS] - 1       
+        urlon = - data["Longitude"][county_FIPS] + 1    
+        lllat = data["Latitude"][county_FIPS]  - 1
+        urlat = data["Latitude"][county_FIPS]  + 1  
+        zoom_time = 6
+
     county_info = (lllon, urlon, lllat, urlat)
     
-    axins = zoomed_inset_axes(ax, 6, loc = 4)
+    axins = zoomed_inset_axes(ax, zoom_time, loc = 4)
     axins.set_xlim(lllon, urlon)
     axins.set_ylim(lllat, urlat)
 
@@ -246,9 +239,12 @@ def plot_county_location(county_FIPS):
     figure_name = "../../output/county_location/county_loc_" + state + "_"+ \
                   county + ".png"
     fig.savefig(figure_name, bbox_inches='tight', format = 'png', dpi = 300)
-    plt.close()          
+    plt.close()  
+    return 0
     
 if __name__ == "__main__":
+
+    """
     data = pd.read_csv("../../data/database_cleaned.csv")
     
     data['COUNTY'] = data['COUNTY'].astype(str)
@@ -259,18 +255,33 @@ if __name__ == "__main__":
     data.loc[data['state'].str.len() == 1, 'state']  = '0' + data.state
     
     data["FIPS"] = data["state"] + data["COUNTY"]
+    data = data[['COUNTY', 'state', 'FIPS', 'Longitude', 'Latitude']]
     
     FIPS_list = data['FIPS'].tolist()
     
+    data= data.set_index("FIPS")
+    
+    
+    , "21", "22", "23", "24", "25", "26", "27", "28",
+    "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39",
+    "40", "41", "42", "44", "45", "46", "47", "48", "49", "50", "51",
+    "53", "54", "55", "56"
+    
     for FIPS in FIPS_list:
-        plot_county_location(FIPS)
+        if FIPS[0:2] in ["20"]:
+            start = time.clock()     
+            plot_county_location(FIPS, data)
+            print(FIPS, time.clock() - start) 
     
     """
-    varlist = ["crime_rate"]
+    varlist = ["Median_hhinc", "median_rent_value", "median_home_value", \
+               "Pov_rate", "Share_college_ormore", "Share_over65", "Share_under18", \
+               "crime_rate", "winter_avg_temp", "summer_avg_temp", "annual_avg_temp", \
+               "aqi_good"]
     
     for var in varlist:
         plot_county_choropleth(var)
-    
+    """
     varname = "crime_rate"
     fips_abbr = pd.read_csv("../../data/state_FIPS_abbr.csv", dtype = str)
     
