@@ -270,10 +270,11 @@ if __name__ == "__main__":
                   "46", "47", "48", "49", "50", "51", "53", "54", "55", "56"]
     
     for FIPS in FIPS_list:
-        if FIPS[0:2] in ["29"]:
+        if FIPS[0:2] in ["48"]:
             start = time.clock()   
             plot_county_location(FIPS, data)
             print(FIPS, time.clock() - start) 
+            print(gc.collect())
             
     
     """
