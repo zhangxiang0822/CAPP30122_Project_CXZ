@@ -1,0 +1,70 @@
+{% load staticfiles %}
+{% load search_tags %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Retirement planner</title>
+        <link rel="stylesheet" type="text/css" href="{% static "/main.css" %}" />
+    </head>
+    <body>
+
+        <div id="header">
+            <h1>Retirement planner</h1>
+        </div>
+
+        <div class="frame">
+            <form method="get">
+                
+                <table class="form">
+                {{ form }}
+                </table>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+
+
+        {% if args %}
+        <div class="args">
+            <pre>{{ args }}</pre>
+        </div>
+        {% endif %}
+
+        {% if err %}
+        <div class="error">
+            {{ err|safe }}
+        </div>
+        {% endif %}
+
+
+
+        <div class="frame">
+            {% if result != None %}
+            <div class="results">
+                <table class="courses">
+
+                    <tr>
+                        
+                        <th> Recommended county(ies)</th>
+                        
+                    </tr>
+
+                    {% for entry in result %}
+                    <tr>
+                        
+                        <td>
+                            <a href="/{{entry.ST}}/{{entry.COUNTY}}">
+                                {{ entry.NAME }}
+                            </a>
+                        </td>
+                        
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <p class="num_results">Results: {{ num_results }}</p>
+            {% endif %}
+
+
+        </div>
+    </body>
+</html>

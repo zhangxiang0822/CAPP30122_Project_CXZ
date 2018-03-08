@@ -1,0 +1,53 @@
+{% load static %} 
+{% static "" as baseUrl %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recommended county(ies) details</title>
+        <link rel="stylesheet" type="text/css" href="{% static "/main.css" %}" />
+    </head>
+
+    <body>
+
+        <div>
+            <h1>Details of {{NAME}}</h1>
+        </div>
+
+         <div class="frame">
+            
+            <div class="results">
+                <table class="courses">
+
+                    <tr>
+                        {% for col in aqi_columns %}
+                        <th> {{col}} </th>
+                        {% endfor %}
+                    </tr>
+
+                    {% for entry in aqi_table %}
+                    <tr>
+                        
+                        {% for element in entry%}
+                        <td>
+                            
+                                {{ element }}
+                            
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+            <!-- <img src = "/static/test.png" /> -->
+            <img src="{{ baseUrl }}/temp_viz.png" alt="My image"/>
+        
+        </div>
+
+        
+    </body>
+        
+
+   
+</html>

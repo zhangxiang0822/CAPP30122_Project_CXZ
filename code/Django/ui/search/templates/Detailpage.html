@@ -1,0 +1,253 @@
+{% load static %} 
+{% static "" as baseUrl %}
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lobster|Merriweather|Pacifico" rel="stylesheet">
+	<title>CAPP30122 HTML</title>
+
+	<!-- Bootstrap Core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link rel="stylesheet" type="text/css" href="{% static "/custom.css" %}" />
+    <script>var __adobewebfontsappname__="dreamweaver"</script>
+	<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+    	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+	
+<body>
+<!-- Main Container -->
+	
+	<!-- Top Navigator -->
+	<!-- We learn this from w3c school -->
+<div class="topnav">
+  		<a href = "/">TRG Group</a>
+	</div>
+	
+<!-- Feature -->
+	<div style = "background-image: url('{{ baseUrl }}/retirement.jpg')" class = "jumbotron feature">
+		<div class = "container">
+			<h1> {{NAME}} </h1>
+			<!-- <h1> STATE </h1> -->
+			<p> Recommend county for your retired life</p>
+		</div>
+	</div>
+	
+    <div class="container">
+		<div class="floatLeft">
+			<table>
+			<tr>
+				<th>COUNTY HIGHLIGHTS</th>
+			</tr>
+			<tr>
+				<td class = "tablerow"><font size = "+1"><b> Total Population:</b></font></td>
+			</tr>
+			    <td class = "tablecontent"> <font color = '#BB0508' size = "+3"><b> {{population}} </b></font></td>
+			</tr>
+			<tr>
+				<td class = "tablerow"><font size = "+1"><b> Shares of 65+:</b></font></td>
+			</tr>
+			<tr>
+				<td class = "tablecontent"><font color = '#0622A3' size = "+3"><b> {{share_over65}} </b></font></td>
+            </tr> 
+			<tr>
+				<td class = "tablerow"><font size = "+1"><b> Median House Value:</b></font></td>
+			</tr>
+			<tr>
+				<td class = "tablecontent"><font color = '#396B14' size = "+3"><b> {{median_home_value}} </b></font></td>
+			</tr>
+
+			<td class = "tablerow"><font size = "+1"><b> Poverty Rate:</b></font></td>
+			</tr>
+			<tr>
+				<td class = "tablecontent"><font color = '#0FB0AA' size = "+3"><b> {{pov_rate}} </b></font></td>
+			</tr>	
+
+			<td class = "tablerow"><font size = "+1"><b> Unemployment Rate:</b></font></td>
+			</tr>
+			<tr>
+				<td class = "tablecontent"><font color = '#CDD40D' size = "+3"><b> {{unemp_rate}} </b></font></td>
+			</tr>	
+			<tr>
+				<td class = "tablerow"><font size = "+1"><b> Nearest Airport:</b></font></td>
+			</tr>
+			<tr>
+				<td class = "tablecontent"><font color = '#dd845a' size = "+1"><b> {{airport.airport}} </b></font></td>
+			</tr>	
+			<tr>
+				<td class = "tablecontent"><font color = '#dd845a' size = "+2">{{airport.dist}}</font></td>
+			</tr>
+			
+			</table>
+		</div>
+
+	
+		<div class = "floatRight">
+			<table>
+			<tr>
+				<th><b> COUNTY LOCATION </b></th>
+			</tr>
+			</table>
+				<div class = "three">
+              		<center>
+            			<img src="https://raw.githubusercontent.com/zhangxiang0822/CAPP30122_Project_CXZ/master/output/county_location/county_loc_17_31.png"           
+                 				style="width: 90%; margin-bottom: 0%; margin-top: 0%;">    
+            		</center>
+				</div>	
+			    <div class = "two">
+			      <table>
+			       <tr align = "center">
+				     <td colspan="2"><font size = "4px"><b> Other County Details</b></font></td>
+			       </tr>
+			       <tr>
+				     <td class="tablerow2"> Share of college or more </td>
+				     <td class="tablerow2"> {{share_college_ormore}}</td>								
+			       </tr>
+			       <tr>
+				     <td class="tablerow2"> Share of highschool or less </td>
+				     <td class="tablerow2"> {{share_highschool_orless}}</td>								
+			       </tr>
+			
+			       <tr>
+				     <td class="tablerow2"> Criminal rate </td>
+				     <td class="tablerow2"> {{crime_rate}}</td>								
+			       </tr>
+			       <tr>
+				     <td class="tablerow2"> Median rent value </td>
+				     <td class="tablerow2"> {{median_rent_value}}</td>								
+			       </tr>
+			     </table>			
+		        </div>
+	    </div>
+		
+    <!-- Promos -->
+	<div class="container">
+		<div class = "floatRight">
+			<table>
+			<tr>
+				<th> GRAPH VISULIZATION </th>
+			</tr>
+			</table>
+            <div class="row promo">
+				<div class = "one">
+              		<center>
+            			<img src="{{ baseUrl }}/temp_viz.png"           
+                 				style="width: 90%; margin-bottom: 0%; margin-top: 0%;">    
+            		</center>
+				</div>			  
+
+			    <div class = 'two'>
+			    	<center>
+					  	<img src="{{ baseUrl }}/racial_distribution.png" 
+                 				style="width: 90%; margin-bottom: 0%; margin-top: 0%;"> 
+                 	<center>				  
+				</div> 
+            </div>	
+            
+		</div>
+
+
+    </div><!-- /.container-fluid -->
+
+
+<!-- Heading -->
+
+	
+	<div class="container">
+		<div class = "floatRight">
+			<table>
+			    <th> SIMILAR COUNTY </th>
+		    </table>
+
+			<div class="frame">
+		            <form method="get">
+		                
+		                <table class="form">
+		                {{ form }}
+		                </table>
+		                <input type="submit" value="Search" />
+		            </form>
+		    </div>
+
+		        {% if args %}
+		        <div class="args">
+		            <pre>{{ args }}</pre>
+		        </div>
+		        {% endif %}
+
+		        {% if err %}
+		        <div class="error">
+		            {{ err|safe }}
+		        </div>
+		        {% endif %}
+
+		    <div class="frame">
+		        {% if result != None %}
+		        <div class="results">
+		            <table class="courses">
+
+		                <tr>
+		                    <th> States</th>
+		                    <th> Recommended county(ies)</th>
+		                        
+		                </tr>
+
+		                {% for entry in result %}
+		                <tr>
+		                    <td>
+		                        <a>
+		                        {{ entry.State_name }}
+		                        </a>
+		                    </td>
+		                        
+		                    <td>
+		                        <a href="/{{entry.ST}}/{{entry.COUNTY}}">
+		                            {{ entry.NAME }}
+		                        </a>
+		                    </td>
+		                        
+		                 </tr>
+		                    {% endfor %}
+		            </table>
+		        </div>
+		            <p class="num_results">Results: {{ num_results }}</p>
+		            {% endif %}
+		    </div>
+		</div>
+	</div>
+
+    <style>
+        .image { background-size: contain; 
+                 background-position: right;}
+
+        @media (min-width: 768px) {
+          .container {
+            width: 750px;
+          }
+        }
+        @media (min-width: 992px) {
+          .container {
+            width: 970px;
+          }
+        }
+        @media (min-width: 1200px) {
+          .container {
+            width: 1170px;
+          }
+        }
+    </style>	
+<!-- Main Container Ends -->
+</body>
+</html>

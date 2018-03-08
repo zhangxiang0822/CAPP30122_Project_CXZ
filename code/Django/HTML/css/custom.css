@@ -1,0 +1,305 @@
+html {
+  font-size: 10px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;   
+	margin: 0;
+	color: #959595;
+	background-color: #fff;
+}
+	
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	color: #dd845a;
+	}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-md-4 {
+    width: 28%;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+  }
+
+	
+.feature {
+	background: url('../images/nightlight.jpg');
+	background-position: top right;
+	background-size: cover;
+	background-color: #dd845a;
+	color: white;
+	text-shadow: 1px 1px 8px black;
+	}
+
+.feature .btn {
+	text-shadow: none;
+	}
+
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+  color: inherit;
+  background-color: #eee;
+}
+
+.jumbotron .container {
+	max-width: 100%;
+	max-height: 100%
+}
+
+.tablerow {
+	padding-left: 15px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.promo, .footer-map {
+	border-width: 1px;
+	border-color: black;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+
+.promo,
+.promo h3,
+.promo a:link,
+.promo a:visited,
+.promo a:hover,
+.promo a:active {
+    color: white;
+	text-shadow: 1px 1px 8px black;
+    text-decoration: none;
+}
+
+.promo-item {
+    height: 200px;
+    line-height: 180px;
+    text-align: center;
+}
+
+.promo-item:hover {
+    background-size: 110%; 
+    border: 5px solid black;
+    line-height: 170px;
+}
+
+.promo-item h3 {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.item-1 {
+	background: url('../images/mung_beans.jpg');
+	}
+	
+.item-2 {
+	background: url('../images/coffee_beans_1.jpg');
+	}
+	
+.item-3 {
+	background: url('../images/grapes.jpg');
+	}
+		
+.item-1,
+.item-2,
+.item-3 {
+	background-size: cover;
+	background-position: 50% 50%;
+	}
+
+.featured-product > img,
+.featured-product > a > img {
+	height: 150px;
+}
+
+.featured-product h3 {
+	color: #dd845a;
+	font-size: 18px;
+	}
+
+.featured-product .price {
+	color: #dd845a;
+	font-size: 18px;
+	}
+	
+.featured-product .price s {
+	color: #999;
+	font-size: 18px;
+	}
+	
+.footer-map {
+	height: 300px;
+	width: 100%;
+	background: url('../images/map.jpg');
+	background-size: cover;
+	border-color: #ccc;
+	}
+.footer-info {
+    padding: 20px 0;
+    background: #f7f7f7;
+}
+
+.footer-info,
+.footer-info a:link,
+.footer-info a:hover,
+.footer-info a:focus,
+.footer-info a:visited {
+    color: #959595;
+	}
+
+.footer-info h3 {
+	color: black;
+	font-size: 18px;
+	}
+    
+.footer-info-item {
+    padding: 0px 20px;
+    }
+    
+footer .small-print {
+	background-color: #fff;
+	padding: 30px 0;
+	text-align: center;
+}
+
+
+/*
+*************************** 
+Override Bootstrap Classes 
+***************************
+*/
+
+/* Links */
+a {
+  color: orange;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: darkorange;
+  text-decoration: underline;
+}
+
+/* Primary Buttons */
+.btn-primary {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: darkorange;
+  border-color: darkorange;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: darkorange;
+  border-color: darkorange;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: darkorange;
+  border-color: darkorange;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: darkorange;
+  border-color: darkorange;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: sandybrown;
+  border-color: sandybrown;
+}
+
+.floatLeft { width: 30%; float: left; }
+.floatRight {width: 60%; float: right; }
