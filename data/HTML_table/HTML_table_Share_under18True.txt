@@ -2,10 +2,10 @@
                     <table align = center class = "table" width = "70%" border = "1" frame = "void" 
         			   rules = "rows">
             		<thead>
-            			<th style="text-align: left;">Rank</th>
-            			<th style="text-align: left;">County</th>
-            			<th style="text-align: left;">State</th>
-            			<th style="text-align: right;">Share Aged 18 or Less</th>
+            			<th style="text-align: left;"><font size = "-1">Rank</font></th>
+            			<th style="text-align: left;"><font size = "-1">County</font></th>
+            			<th style="text-align: left;"><font size = "-1">State</font></th>
+            			<th style="text-align: right;"><font size = "-1">Share Aged 18 or Less</font></th>
             		</thead> 
 
                      	<tr> 

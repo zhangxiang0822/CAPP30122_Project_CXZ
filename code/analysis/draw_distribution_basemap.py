@@ -266,10 +266,10 @@ if __name__ == "__main__":
     data= data.set_index("FIPS")
     
     state_list = ["30", "33", \
-                  "35", "38"]
+                  "35"]
     
     for FIPS in FIPS_list:
-        if FIPS[0:2] in ["39"]:
+        if FIPS[0:2] in ["35"]:
             start = time.clock()   
             plot_county_location(FIPS, data)
             print(FIPS, time.clock() - start) 
