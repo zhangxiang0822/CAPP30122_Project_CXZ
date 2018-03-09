@@ -266,12 +266,12 @@ if __name__ == "__main__":
     data= data.set_index("FIPS")
     
     for FIPS in FIPS_list:
-        if FIPS[0:2] in ["12"] and int(FIPS[2:]) >= 119:
+        if FIPS[0:2] in ["27"] and int(FIPS[2:]) >= 121:
             start = time.clock()   
             plot_county_location(FIPS, data)
             print(FIPS, time.clock() - start) 
-            
     
+            
     """
     varlist = ["Median_hhinc", "median_rent_value", "median_home_value", \
                "Pov_rate", "Share_college_ormore", "Share_over65", "Share_under18", \

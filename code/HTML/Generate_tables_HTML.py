@@ -152,9 +152,9 @@ def gen_html_page(varname, graph_title, title1, title2, highfirst):
     file.close() 
 
     if highfirst:
-        table2_name = "../../data/HTML_table/HTML_table_" + varname + "False.txt"
-    else:
         table2_name = "../../data/HTML_table/HTML_table_" + varname + "True.txt"
+    else:
+        table2_name = "../../data/HTML_table/HTML_table_" + varname + "False.txt"
 
     file = open(table2_name, "r")
     table2 = file.read()
