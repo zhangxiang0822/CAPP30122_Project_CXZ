@@ -1,0 +1,612 @@
+<div>
+                    <table align = center class = "table" width = "70%" border = "1" frame = "void" 
+        			   rules = "rows">
+            		<thead>
+            			<th style="text-align: left;"><font size = "-1">Rank</font></th>
+            			<th style="text-align: left;"><font size = "-1">County</font></th>
+            			<th style="text-align: left;"><font size = "-1">State</font></th>
+            			<th style="text-align: right;"><font size = "-1">Median Monthly Rent Rent</font></th>
+            		</thead> 
+
+                  	<tr> 
+		<td align="left">1</td> 
+		<td align="left"><a href = "/51/13">Arlington County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1754.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">2</td> 
+		<td align="left"><a href = "/6/81">San Mateo County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1647.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">3</td> 
+		<td align="left"><a href = "/51/59">Fairfax County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1619.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">4</td> 
+		<td align="left"><a href = "/6/85">Santa Clara County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1616.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">5</td> 
+		<td align="left"><a href = "/51/600">Fairfax city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1588.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">6</td> 
+		<td align="left"><a href = "/6/41">Marin County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1587.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">7</td> 
+		<td align="left"><a href = "/6/75">San Francisco County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1498.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">8</td> 
+		<td align="left"><a href = "/51/610">Falls Church city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1493.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">9</td> 
+		<td align="left"><a href = "/51/107">Loudoun County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1483.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">10</td> 
+		<td align="left"><a href = "/25/19">Nantucket County</a></td> 
+		<td align="left"> Massachusetts</td> 
+		<td align="right">1476.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">11</td> 
+		<td align="left"><a href = "/24/31">Montgomery County</a></td> 
+		<td align="left"> Maryland</td> 
+		<td align="right">1463.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">12</td> 
+		<td align="left"><a href = "/51/510">Alexandria city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1459.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">13</td> 
+		<td align="left"><a href = "/6/59">Orange County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1455.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">14</td> 
+		<td align="left"><a href = "/36/59">Nassau County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">1437.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">15</td> 
+		<td align="left"><a href = "/36/61">New York County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">1432.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">16</td> 
+		<td align="left"><a href = "/6/111">Ventura County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1416.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">17</td> 
+		<td align="left"><a href = "/15/3">Honolulu County</a></td> 
+		<td align="left"> Hawaii</td> 
+		<td align="right">1415.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">18</td> 
+		<td align="left"><a href = "/24/27">Howard County</a></td> 
+		<td align="left"> Maryland</td> 
+		<td align="right">1403.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">19</td> 
+		<td align="left"><a href = "/36/103">Suffolk County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">1391.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">20</td> 
+		<td align="left"><a href = "/51/153">Prince William County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1363.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">21</td> 
+		<td align="left"><a href = "/6/87">Santa Cruz County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1349.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">22</td> 
+		<td align="left"><a href = "/24/3">Anne Arundel County</a></td> 
+		<td align="left"> Maryland</td> 
+		<td align="right">1322.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">23</td> 
+		<td align="left"><a href = "/6/13">Contra Costa County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1315.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">24</td> 
+		<td align="left"><a href = "/6/55">Napa County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1297.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">25</td> 
+		<td align="left"><a href = "/51/685">Manassas Park city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1288.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">26</td> 
+		<td align="left"><a href = "/24/17">Charles County</a></td> 
+		<td align="left"> Maryland</td> 
+		<td align="right">1279.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">27</td> 
+		<td align="left"><a href = "/6/83">Santa Barbara County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1278.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">28</td> 
+		<td align="left"><a href = "/24/9">Calvert County</a></td> 
+		<td align="left"> Maryland</td> 
+		<td align="right">1274.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">29</td> 
+		<td align="left"><a href = "/6/1">Alameda County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1272.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">30</td> 
+		<td align="left"><a href = "/8/35">Douglas County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">1270.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">31</td> 
+		<td align="left"><a href = "/51/199">York County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1264.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">32</td> 
+		<td align="left"><a href = "/6/73">San Diego County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1255.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">33</td> 
+		<td align="left"><a href = "/34/35">Somerset County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1252.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">34</td> 
+		<td align="left"><a href = "/36/81">Queens County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">1248.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">35</td> 
+		<td align="left"><a href = "/34/27">Morris County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1235.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">36</td> 
+		<td align="left"><a href = "/11/1">District of Columbia</a></td> 
+		<td align="left"> District of Columbia</td> 
+		<td align="right">1234.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">37</td> 
+		<td align="left"><a href = "/36/119">Westchester County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">1233.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">38</td> 
+		<td align="left"><a href = "/51/179">Stafford County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1229.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">39</td> 
+		<td align="left"><a href = "/34/3">Bergen County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1220.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">40</td> 
+		<td align="left"><a href = "/25/21">Norfolk County</a></td> 
+		<td align="left"> Massachusetts</td> 
+		<td align="right">1217.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">41</td> 
+		<td align="left"><a href = "/8/14">Broomfield County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">1216.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">42</td> 
+		<td align="left"><a href = "/25/17">Middlesex County</a></td> 
+		<td align="left"> Massachusetts</td> 
+		<td align="right">1211.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">43</td> 
+		<td align="left"><a href = "/6/97">Sonoma County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1209.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">44</td> 
+		<td align="left"><a href = "/6/69">San Benito County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1202.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">45</td> 
+		<td align="left"><a href = "/36/87">Rockland County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">1200.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">46</td> 
+		<td align="left"><a href = "/12/87">Monroe County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">1198.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">47</td> 
+		<td align="left"><a href = "/34/19">Hunterdon County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1181.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">48</td> 
+		<td align="left"><a href = "/24/33">Prince George's County</a></td> 
+		<td align="left"> Maryland</td> 
+		<td align="right">1181.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">49</td> 
+		<td align="left"><a href = "/51/683">Manassas city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1177.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">50</td> 
+		<td align="left"><a href = "/34/23">Middlesex County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1176.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">51</td> 
+		<td align="left"><a href = "/25/25">Suffolk County</a></td> 
+		<td align="left"> Massachusetts</td> 
+		<td align="right">1167.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">52</td> 
+		<td align="left"><a href = "/6/95">Solano County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1162.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">53</td> 
+		<td align="left"><a href = "/8/37">Eagle County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">1157.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">54</td> 
+		<td align="left"><a href = "/25/7">Dukes County</a></td> 
+		<td align="left"> Massachusetts</td> 
+		<td align="right">1154.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">55</td> 
+		<td align="left"><a href = "/15/9">Maui County</a></td> 
+		<td align="left"> Hawaii</td> 
+		<td align="right">1153.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">56</td> 
+		<td align="left"><a href = "/17/93">Kendall County</a></td> 
+		<td align="left"> Illinois</td> 
+		<td align="right">1151.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">57</td> 
+		<td align="left"><a href = "/36/79">Putnam County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">1150.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">58</td> 
+		<td align="left"><a href = "/6/61">Placer County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1149.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">59</td> 
+		<td align="left"><a href = "/6/53">Monterey County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1147.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">60</td> 
+		<td align="left"><a href = "/9/1">Fairfield County</a></td> 
+		<td align="left"> Connecticut</td> 
+		<td align="right">1146.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">61</td> 
+		<td align="left"><a href = "/8/97">Pitkin County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">1144.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">62</td> 
+		<td align="left"><a href = "/51/177">Spotsylvania County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1143.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">63</td> 
+		<td align="left"><a href = "/6/37">Los Angeles County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1139.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">64</td> 
+		<td align="left"><a href = "/6/79">San Luis Obispo County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1137.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">65</td> 
+		<td align="left"><a href = "/34/29">Ocean County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1133.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">66</td> 
+		<td align="left"><a href = "/24/21">Frederick County</a></td> 
+		<td align="left"> Maryland</td> 
+		<td align="right">1128.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">67</td> 
+		<td align="left"><a href = "/34/25">Monmouth County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1119.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">68</td> 
+		<td align="left"><a href = "/8/117">Summit County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">1115.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">69</td> 
+		<td align="left"><a href = "/36/47">Kings County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">1110.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">70</td> 
+		<td align="left"><a href = "/2/20">Anchorage Municipality</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">1110.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">71</td> 
+		<td align="left"><a href = "/2/90">Fairbanks North Star Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">1106.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">72</td> 
+		<td align="left"><a href = "/49/43">Summit County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">1106.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">73</td> 
+		<td align="left"><a href = "/8/13">Boulder County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">1100.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">74</td> 
+		<td align="left"><a href = "/2/110">Juneau City and Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">1099.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">75</td> 
+		<td align="left"><a href = "/15/7">Kauai County</a></td> 
+		<td align="left"> Hawaii</td> 
+		<td align="right">1091.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">76</td> 
+		<td align="left"><a href = "/34/17">Hudson County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1084.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">77</td> 
+		<td align="left"><a href = "/53/33">King County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">1084.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">78</td> 
+		<td align="left"><a href = "/8/113">San Miguel County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">1081.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">79</td> 
+		<td align="left"><a href = "/51/810">Virginia Beach city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1078.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">80</td> 
+		<td align="left"><a href = "/51/149">Prince George County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1076.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">81</td> 
+		<td align="left"><a href = "/24/37">St. Mary's County</a></td> 
+		<td align="left"> Maryland</td> 
+		<td align="right">1073.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">82</td> 
+		<td align="left"><a href = "/51/65">Fluvanna County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1067.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">83</td> 
+		<td align="left"><a href = "/12/11">Broward County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">1061.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">84</td> 
+		<td align="left"><a href = "/34/5">Burlington County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1058.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">85</td> 
+		<td align="left"><a href = "/2/16">Aleutians West Census Area</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">1053.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">86</td> 
+		<td align="left"><a href = "/42/29">Chester County</a></td> 
+		<td align="left"> Pennsylvania</td> 
+		<td align="right">1046.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">87</td> 
+		<td align="left"><a href = "/51/95">James City County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">1040.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">88</td> 
+		<td align="left"><a href = "/8/107">Routt County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">1039.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">89</td> 
+		<td align="left"><a href = "/47/187">Williamson County</a></td> 
+		<td align="left"> Tennessee</td> 
+		<td align="right">1038.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">90</td> 
+		<td align="left"><a href = "/34/37">Sussex County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1035.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">91</td> 
+		<td align="left"><a href = "/34/39">Union County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1033.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">92</td> 
+		<td align="left"><a href = "/34/31">Passaic County</a></td> 
+		<td align="left"> New Jersey</td> 
+		<td align="right">1032.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">93</td> 
+		<td align="left"><a href = "/17/43">DuPage County</a></td> 
+		<td align="left"> Illinois</td> 
+		<td align="right">1029.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">94</td> 
+		<td align="left"><a href = "/6/65">Riverside County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1027.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">95</td> 
+		<td align="left"><a href = "/12/99">Palm Beach County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">1026.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">96</td> 
+		<td align="left"><a href = "/6/57">Nevada County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1022.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">97</td> 
+		<td align="left"><a href = "/36/85">Richmond County</a></td> 
+		<td align="left"> New York</td> 
+		<td align="right">1021.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">98</td> 
+		<td align="left"><a href = "/48/397">Rockwall County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">1015.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">99</td> 
+		<td align="left"><a href = "/56/39">Teton County</a></td> 
+		<td align="left"> Wyoming</td> 
+		<td align="right">1015.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">100</td> 
+		<td align="left"><a href = "/6/113">Yolo County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">1014.0</td> 
+	</tr> 
+	</table>
+	</div>

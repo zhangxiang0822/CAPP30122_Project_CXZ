@@ -1,0 +1,612 @@
+<div>
+                    <table align = center class = "table" width = "70%" border = "1" frame = "void" 
+        			   rules = "rows">
+            		<thead>
+            			<th style="text-align: left;"><font size = "-1">Rank</font></th>
+            			<th style="text-align: left;"><font size = "-1">County</font></th>
+            			<th style="text-align: left;"><font size = "-1">State</font></th>
+            			<th style="text-align: right;"><font size = "-1">Winter Average Temperature (F)</font></th>
+            		</thead> 
+
+                  	<tr> 
+		<td align="left">1</td> 
+		<td align="left"><a href = "/2/185">North Slope Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">-19.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">2</td> 
+		<td align="left"><a href = "/2/188">Northwest Arctic Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">-0.43</td> 
+	</tr> 
+	<tr> 
+		<td align="left">3</td> 
+		<td align="left"><a href = "/2/90">Fairbanks North Star Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">0.53</td> 
+	</tr> 
+	<tr> 
+		<td align="left">4</td> 
+		<td align="left"><a href = "/2/261">Valdez-Cordova Census Area</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">0.9</td> 
+	</tr> 
+	<tr> 
+		<td align="left">5</td> 
+		<td align="left"><a href = "/27/69">Kittson County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">4.7</td> 
+	</tr> 
+	<tr> 
+		<td align="left">6</td> 
+		<td align="left"><a href = "/38/19">Cavalier County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">6.63</td> 
+	</tr> 
+	<tr> 
+		<td align="left">7</td> 
+		<td align="left"><a href = "/27/135">Roseau County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">6.9</td> 
+	</tr> 
+	<tr> 
+		<td align="left">8</td> 
+		<td align="left"><a href = "/2/180">Nome Census Area</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">7.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">9</td> 
+		<td align="left"><a href = "/38/79">Rolette County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">8.1</td> 
+	</tr> 
+	<tr> 
+		<td align="left">10</td> 
+		<td align="left"><a href = "/38/67">Pembina County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">8.1</td> 
+	</tr> 
+	<tr> 
+		<td align="left">11</td> 
+		<td align="left"><a href = "/27/77">Lake of the Woods County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">8.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">12</td> 
+		<td align="left"><a href = "/27/61">Itasca County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">9.03</td> 
+	</tr> 
+	<tr> 
+		<td align="left">13</td> 
+		<td align="left"><a href = "/27/119">Polk County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">9.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">14</td> 
+		<td align="left"><a href = "/27/125">Red Lake County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">9.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">15</td> 
+		<td align="left"><a href = "/38/9">Bottineau County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">9.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">16</td> 
+		<td align="left"><a href = "/38/91">Steele County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">9.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">17</td> 
+		<td align="left"><a href = "/2/50">Bethel Census Area</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">9.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">18</td> 
+		<td align="left"><a href = "/27/29">Clearwater County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">9.47</td> 
+	</tr> 
+	<tr> 
+		<td align="left">19</td> 
+		<td align="left"><a href = "/38/69">Pierce County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">9.47</td> 
+	</tr> 
+	<tr> 
+		<td align="left">20</td> 
+		<td align="left"><a href = "/27/113">Pennington County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">9.5</td> 
+	</tr> 
+	<tr> 
+		<td align="left">21</td> 
+		<td align="left"><a href = "/27/89">Marshall County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">9.5</td> 
+	</tr> 
+	<tr> 
+		<td align="left">22</td> 
+		<td align="left"><a href = "/38/95">Towner County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">9.77</td> 
+	</tr> 
+	<tr> 
+		<td align="left">23</td> 
+		<td align="left"><a href = "/27/5">Becker County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">9.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">24</td> 
+		<td align="left"><a href = "/38/63">Nelson County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">9.9</td> 
+	</tr> 
+	<tr> 
+		<td align="left">25</td> 
+		<td align="left"><a href = "/38/39">Griggs County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">10.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">26</td> 
+		<td align="left"><a href = "/38/5">Benson County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">10.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">27</td> 
+		<td align="left"><a href = "/38/35">Grand Forks County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">10.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">28</td> 
+		<td align="left"><a href = "/27/7">Beltrami County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">10.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">29</td> 
+		<td align="left"><a href = "/27/159">Wadena County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">10.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">30</td> 
+		<td align="left"><a href = "/38/13">Burke County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">10.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">31</td> 
+		<td align="left"><a href = "/27/57">Hubbard County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">10.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">32</td> 
+		<td align="left"><a href = "/27/137">St. Louis County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">10.87</td> 
+	</tr> 
+	<tr> 
+		<td align="left">33</td> 
+		<td align="left"><a href = "/38/75">Renville County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">10.9</td> 
+	</tr> 
+	<tr> 
+		<td align="left">34</td> 
+		<td align="left"><a href = "/38/71">Ramsey County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">11.03</td> 
+	</tr> 
+	<tr> 
+		<td align="left">35</td> 
+		<td align="left"><a href = "/38/27">Eddy County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">11.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">36</td> 
+		<td align="left"><a href = "/38/61">Mountrail County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">11.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">37</td> 
+		<td align="left"><a href = "/27/71">Koochiching County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">11.6</td> 
+	</tr> 
+	<tr> 
+		<td align="left">38</td> 
+		<td align="left"><a href = "/38/3">Barnes County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">11.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">39</td> 
+		<td align="left"><a href = "/27/111">Otter Tail County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">11.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">40</td> 
+		<td align="left"><a href = "/38/17">Cass County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">11.9</td> 
+	</tr> 
+	<tr> 
+		<td align="left">41</td> 
+		<td align="left"><a href = "/27/1">Aitkin County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">11.97</td> 
+	</tr> 
+	<tr> 
+		<td align="left">42</td> 
+		<td align="left"><a href = "/38/97">Traill County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">12.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">43</td> 
+		<td align="left"><a href = "/27/87">Mahnomen County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">12.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">44</td> 
+		<td align="left"><a href = "/27/153">Todd County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">12.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">45</td> 
+		<td align="left"><a href = "/8/51">Gunnison County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">12.4</td> 
+	</tr> 
+	<tr> 
+		<td align="left">46</td> 
+		<td align="left"><a href = "/38/93">Stutsman County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">12.53</td> 
+	</tr> 
+	<tr> 
+		<td align="left">47</td> 
+		<td align="left"><a href = "/27/27">Clay County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">12.53</td> 
+	</tr> 
+	<tr> 
+		<td align="left">48</td> 
+		<td align="left"><a href = "/38/99">Walsh County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">12.63</td> 
+	</tr> 
+	<tr> 
+		<td align="left">49</td> 
+		<td align="left"><a href = "/38/55">McLean County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">12.87</td> 
+	</tr> 
+	<tr> 
+		<td align="left">50</td> 
+		<td align="left"><a href = "/38/101">Ward County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">13.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">51</td> 
+		<td align="left"><a href = "/27/155">Traverse County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">52</td> 
+		<td align="left"><a href = "/38/103">Wells County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">13.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">53</td> 
+		<td align="left"><a href = "/27/21">Cass County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">54</td> 
+		<td align="left"><a href = "/27/149">Stevens County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">55</td> 
+		<td align="left"><a href = "/27/75">Lake County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">56</td> 
+		<td align="left"><a href = "/38/81">Sargent County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">13.43</td> 
+	</tr> 
+	<tr> 
+		<td align="left">57</td> 
+		<td align="left"><a href = "/27/51">Grant County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.47</td> 
+	</tr> 
+	<tr> 
+		<td align="left">58</td> 
+		<td align="left"><a href = "/27/41">Douglas County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.53</td> 
+	</tr> 
+	<tr> 
+		<td align="left">59</td> 
+		<td align="left"><a href = "/27/115">Pine County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.57</td> 
+	</tr> 
+	<tr> 
+		<td align="left">60</td> 
+		<td align="left"><a href = "/8/79">Mineral County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">13.57</td> 
+	</tr> 
+	<tr> 
+		<td align="left">61</td> 
+		<td align="left"><a href = "/55/125">Vilas County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">13.6</td> 
+	</tr> 
+	<tr> 
+		<td align="left">62</td> 
+		<td align="left"><a href = "/27/95">Mille Lacs County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">63</td> 
+		<td align="left"><a href = "/27/65">Kanabec County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">64</td> 
+		<td align="left"><a href = "/46/91">Marshall County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">13.77</td> 
+	</tr> 
+	<tr> 
+		<td align="left">65</td> 
+		<td align="left"><a href = "/27/93">Meeker County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">66</td> 
+		<td align="left"><a href = "/30/19">Daniels County</a></td> 
+		<td align="left"> Montana</td> 
+		<td align="right">13.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">67</td> 
+		<td align="left"><a href = "/38/77">Richland County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">13.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">68</td> 
+		<td align="left"><a href = "/27/25">Chisago County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">13.93</td> 
+	</tr> 
+	<tr> 
+		<td align="left">69</td> 
+		<td align="left"><a href = "/38/105">Williams County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">13.93</td> 
+	</tr> 
+	<tr> 
+		<td align="left">70</td> 
+		<td align="left"><a href = "/55/113">Sawyer County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">13.93</td> 
+	</tr> 
+	<tr> 
+		<td align="left">71</td> 
+		<td align="left"><a href = "/27/17">Carlton County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">14.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">72</td> 
+		<td align="left"><a href = "/56/39">Teton County</a></td> 
+		<td align="left"> Wyoming</td> 
+		<td align="right">14.03</td> 
+	</tr> 
+	<tr> 
+		<td align="left">73</td> 
+		<td align="left"><a href = "/38/43">Kidder County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">14.03</td> 
+	</tr> 
+	<tr> 
+		<td align="left">74</td> 
+		<td align="left"><a href = "/26/71">Iron County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">14.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">75</td> 
+		<td align="left"><a href = "/46/13">Brown County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">14.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">76</td> 
+		<td align="left"><a href = "/27/167">Wilkin County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">14.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">77</td> 
+		<td align="left"><a href = "/56/23">Lincoln County</a></td> 
+		<td align="left"> Wyoming</td> 
+		<td align="right">14.17</td> 
+	</tr> 
+	<tr> 
+		<td align="left">78</td> 
+		<td align="left"><a href = "/23/7">Franklin County</a></td> 
+		<td align="left"> Maine</td> 
+		<td align="right">14.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">79</td> 
+		<td align="left"><a href = "/38/47">Logan County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">14.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">80</td> 
+		<td align="left"><a href = "/38/45">LaMoure County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">14.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">81</td> 
+		<td align="left"><a href = "/38/21">Dickey County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">14.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">82</td> 
+		<td align="left"><a href = "/26/13">Baraga County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">14.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">83</td> 
+		<td align="left"><a href = "/26/53">Gogebic County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">14.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">84</td> 
+		<td align="left"><a href = "/55/129">Washburn County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">14.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">85</td> 
+		<td align="left"><a href = "/55/67">Langlade County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">14.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">86</td> 
+		<td align="left"><a href = "/55/99">Price County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">14.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">87</td> 
+		<td align="left"><a href = "/23/25">Somerset County</a></td> 
+		<td align="left"> Maine</td> 
+		<td align="right">14.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">88</td> 
+		<td align="left"><a href = "/38/83">Sheridan County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">14.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">89</td> 
+		<td align="left"><a href = "/23/21">Piscataquis County</a></td> 
+		<td align="left"> Maine</td> 
+		<td align="right">14.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">90</td> 
+		<td align="left"><a href = "/27/35">Crow Wing County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">14.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">91</td> 
+		<td align="left"><a href = "/38/73">Ransom County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">14.4</td> 
+	</tr> 
+	<tr> 
+		<td align="left">92</td> 
+		<td align="left"><a href = "/55/5">Barron County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">14.4</td> 
+	</tr> 
+	<tr> 
+		<td align="left">93</td> 
+		<td align="left"><a href = "/46/57">Hamlin County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">14.47</td> 
+	</tr> 
+	<tr> 
+		<td align="left">94</td> 
+		<td align="left"><a href = "/55/3">Ashland County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">14.5</td> 
+	</tr> 
+	<tr> 
+		<td align="left">95</td> 
+		<td align="left"><a href = "/8/49">Grand County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">14.53</td> 
+	</tr> 
+	<tr> 
+		<td align="left">96</td> 
+		<td align="left"><a href = "/27/151">Swift County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">14.6</td> 
+	</tr> 
+	<tr> 
+		<td align="left">97</td> 
+		<td align="left"><a href = "/38/49">McHenry County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">14.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">98</td> 
+		<td align="left"><a href = "/30/91">Sheridan County</a></td> 
+		<td align="left"> Montana</td> 
+		<td align="right">14.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">99</td> 
+		<td align="left"><a href = "/56/35">Sublette County</a></td> 
+		<td align="left"> Wyoming</td> 
+		<td align="right">14.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">100</td> 
+		<td align="left"><a href = "/55/51">Iron County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">14.77</td> 
+	</tr> 
+	</table>
+	</div>

@@ -1,0 +1,1332 @@
+
+    {% load staticfiles %}
+    {% load search_tags %}
+    {% static "" as baseUrl %}
+    
+    <!DOCTYPE html>
+    <html lang="en-US">
+    <head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lobster|Merriweather|Pacifico" rel="stylesheet">
+    	<title>CAPP30122 HTML</title>
+    
+    	<!-- Bootstrap Core CSS -->
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+        <!--<link href="css/custom.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" href="{% static "/custom.css" %}" />
+    	<script>var __adobewebfontsappname__="dreamweaver"</script>
+    	<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+        	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    	
+    <body>
+    <!-- Main Container -->
+    	
+    	<!-- Top Navigator -->
+    	<!-- We learn this from w3c school -->
+    	<div class="topnav">
+      		<a href = "/">TRG Group</a>
+    	</div>
+    	
+    	<!-- Feature -->
+    	<div style = "background-image: url('{{ baseUrl }}/retirement.jpg')" class = "jumbotron feature">
+    		<div class = "container">
+    			<h1>HAPPY RETIREMENT</h1>
+    			<p>Find the best place for your retired life</p>
+    		</div>
+    	</div>
+        
+            <!-- Figure -->
+            <section>
+            <div class = "container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 align="center"><font color = "black">
+                        The Geography of Share of 65+ People in America
+                    </font></h1>
+                </div>
+            </div>
+        
+            <center>
+            <img src = "{{ baseUrl }}/national_choroplethShare_over65.png"           
+                 style="width: 80%; margin-bottom: 0%; margin-top: 0%;">    
+            </center>
+        </div>
+        </section>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12"><font color = "black" size = '-1'>
+                    <h1 align="center"><font color = "black">List of Counties with the Highest Share of 65+ People</font></h1>
+                </font>
+                </div>
+            </div>
+        </div>
+        
+        <!-- List of table here-->
+        <div>
+                    <table align = center class = "table" width = "70%" border = "1" frame = "void" 
+        			   rules = "rows">
+            		<thead>
+            			<th style="text-align: left;"><font size = "-1">Rank</font></th>
+            			<th style="text-align: left;"><font size = "-1">County</font></th>
+            			<th style="text-align: left;"><font size = "-1">State</font></th>
+            			<th style="text-align: right;"><font size = "-1">Share Aged 65+</font></th>
+            		</thead> 
+
+                     	<tr> 
+		<td align="left">1</td> 
+		<td align="left"><a href = "/12/119">Sumter County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">59.1</td> 
+	</tr> 
+	<tr> 
+		<td align="left">2</td> 
+		<td align="left"><a href = "/12/15">Charlotte County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">38.19</td> 
+	</tr> 
+	<tr> 
+		<td align="left">3</td> 
+		<td align="left"><a href = "/32/9">Esmeralda County</a></td> 
+		<td align="left"> Nevada</td> 
+		<td align="right">38.19</td> 
+	</tr> 
+	<tr> 
+		<td align="left">4</td> 
+		<td align="left"><a href = "/8/79">Mineral County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">37.64</td> 
+	</tr> 
+	<tr> 
+		<td align="left">5</td> 
+		<td align="left"><a href = "/4/12">La Paz County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">34.91</td> 
+	</tr> 
+	<tr> 
+		<td align="left">6</td> 
+		<td align="left"><a href = "/48/385">Real County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">34.45</td> 
+	</tr> 
+	<tr> 
+		<td align="left">7</td> 
+		<td align="left"><a href = "/12/115">Sarasota County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">34.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">8</td> 
+		<td align="left"><a href = "/12/17">Citrus County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">34.05</td> 
+	</tr> 
+	<tr> 
+		<td align="left">9</td> 
+		<td align="left"><a href = "/48/299">Llano County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">33.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">10</td> 
+		<td align="left"><a href = "/12/55">Highlands County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">33.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">11</td> 
+		<td align="left"><a href = "/31/91">Hooker County</a></td> 
+		<td align="left"> Nebraska</td> 
+		<td align="right">33.15</td> 
+	</tr> 
+	<tr> 
+		<td align="left">12</td> 
+		<td align="left"><a href = "/51/103">Lancaster County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">33.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">13</td> 
+		<td align="left"><a href = "/51/133">Northumberland County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">33.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">14</td> 
+		<td align="left"><a href = "/35/51">Sierra County</a></td> 
+		<td align="left"> New Mexico</td> 
+		<td align="right">32.89</td> 
+	</tr> 
+	<tr> 
+		<td align="left">15</td> 
+		<td align="left"><a href = "/51/91">Highland County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">32.87</td> 
+	</tr> 
+	<tr> 
+		<td align="left">16</td> 
+		<td align="left"><a href = "/13/281">Towns County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">32.82</td> 
+	</tr> 
+	<tr> 
+		<td align="left">17</td> 
+		<td align="left"><a href = "/26/1">Alcona County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">32.72</td> 
+	</tr> 
+	<tr> 
+		<td align="left">18</td> 
+		<td align="left"><a href = "/48/311">McMullen County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">32.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">19</td> 
+		<td align="left"><a href = "/38/51">McIntosh County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">32.5</td> 
+	</tr> 
+	<tr> 
+		<td align="left">20</td> 
+		<td align="left"><a href = "/30/79">Prairie County</a></td> 
+		<td align="left"> Montana</td> 
+		<td align="right">31.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">21</td> 
+		<td align="left"><a href = "/8/53">Hinsdale County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">31.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">22</td> 
+		<td align="left"><a href = "/13/291">Union County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">30.95</td> 
+	</tr> 
+	<tr> 
+		<td align="left">23</td> 
+		<td align="left"><a href = "/12/61">Indian River County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">30.54</td> 
+	</tr> 
+	<tr> 
+		<td align="left">24</td> 
+		<td align="left"><a href = "/29/85">Hickory County</a></td> 
+		<td align="left"> Missouri</td> 
+		<td align="right">30.54</td> 
+	</tr> 
+	<tr> 
+		<td align="left">25</td> 
+		<td align="left"><a href = "/12/21">Collier County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">30.51</td> 
+	</tr> 
+	<tr> 
+		<td align="left">26</td> 
+		<td align="left"><a href = "/41/15">Curry County</a></td> 
+		<td align="left"> Oregon</td> 
+		<td align="right">30.44</td> 
+	</tr> 
+	<tr> 
+		<td align="left">27</td> 
+		<td align="left"><a href = "/53/31">Jefferson County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">30.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">28</td> 
+		<td align="left"><a href = "/26/83">Keweenaw County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">30.24</td> 
+	</tr> 
+	<tr> 
+		<td align="left">29</td> 
+		<td align="left"><a href = "/48/263">Kent County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">29.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">30</td> 
+		<td align="left"><a href = "/12/85">Martin County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">29.81</td> 
+	</tr> 
+	<tr> 
+		<td align="left">31</td> 
+		<td align="left"><a href = "/53/69">Wahkiakum County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">29.39</td> 
+	</tr> 
+	<tr> 
+		<td align="left">32</td> 
+		<td align="left"><a href = "/5/5">Baxter County</a></td> 
+		<td align="left"> Arkansas</td> 
+		<td align="right">29.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">33</td> 
+		<td align="left"><a href = "/47/35">Cumberland County</a></td> 
+		<td align="left"> Tennessee</td> 
+		<td align="right">29.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">34</td> 
+		<td align="left"><a href = "/30/39">Granite County</a></td> 
+		<td align="left"> Montana</td> 
+		<td align="right">29.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">35</td> 
+		<td align="left"><a href = "/12/35">Flagler County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">28.91</td> 
+	</tr> 
+	<tr> 
+		<td align="left">36</td> 
+		<td align="left"><a href = "/38/103">Wells County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">28.76</td> 
+	</tr> 
+	<tr> 
+		<td align="left">37</td> 
+		<td align="left"><a href = "/26/143">Roscommon County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">28.7</td> 
+	</tr> 
+	<tr> 
+		<td align="left">38</td> 
+		<td align="left"><a href = "/48/171">Gillespie County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">28.54</td> 
+	</tr> 
+	<tr> 
+		<td align="left">39</td> 
+		<td align="left"><a href = "/27/1">Aitkin County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">28.54</td> 
+	</tr> 
+	<tr> 
+		<td align="left">40</td> 
+		<td align="left"><a href = "/8/27">Custer County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">28.48</td> 
+	</tr> 
+	<tr> 
+		<td align="left">41</td> 
+		<td align="left"><a href = "/51/115">Mathews County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">28.47</td> 
+	</tr> 
+	<tr> 
+		<td align="left">42</td> 
+		<td align="left"><a href = "/26/131">Ontonagon County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">28.44</td> 
+	</tr> 
+	<tr> 
+		<td align="left">43</td> 
+		<td align="left"><a href = "/38/39">Griggs County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">28.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">44</td> 
+		<td align="left"><a href = "/53/55">San Juan County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">28.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">45</td> 
+		<td align="left"><a href = "/45/65">McCormick County</a></td> 
+		<td align="left"> South Carolina</td> 
+		<td align="right">28.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">46</td> 
+		<td align="left"><a href = "/38/83">Sheridan County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">28.16</td> 
+	</tr> 
+	<tr> 
+		<td align="left">47</td> 
+		<td align="left"><a href = "/55/125">Vilas County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">28.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">48</td> 
+		<td align="left"><a href = "/8/91">Ouray County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">28.04</td> 
+	</tr> 
+	<tr> 
+		<td align="left">49</td> 
+		<td align="left"><a href = "/38/47">Logan County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">27.94</td> 
+	</tr> 
+	<tr> 
+		<td align="left">50</td> 
+		<td align="left"><a href = "/8/55">Huerfano County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">27.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">51</td> 
+		<td align="left"><a href = "/4/25">Yavapai County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">27.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">52</td> 
+		<td align="left"><a href = "/48/137">Edwards County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">27.82</td> 
+	</tr> 
+	<tr> 
+		<td align="left">53</td> 
+		<td align="left"><a href = "/55/51">Iron County</a></td> 
+		<td align="left"> Wisconsin</td> 
+		<td align="right">27.81</td> 
+	</tr> 
+	<tr> 
+		<td align="left">54</td> 
+		<td align="left"><a href = "/12/83">Marion County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">27.78</td> 
+	</tr> 
+	<tr> 
+		<td align="left">55</td> 
+		<td align="left"><a href = "/38/63">Nelson County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">27.74</td> 
+	</tr> 
+	<tr> 
+		<td align="left">56</td> 
+		<td align="left"><a href = "/37/19">Brunswick County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">27.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">57</td> 
+		<td align="left"><a href = "/26/119">Montmorency County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">27.6</td> 
+	</tr> 
+	<tr> 
+		<td align="left">58</td> 
+		<td align="left"><a href = "/26/141">Presque Isle County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">27.59</td> 
+	</tr> 
+	<tr> 
+		<td align="left">59</td> 
+		<td align="left"><a href = "/51/119">Middlesex County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">27.57</td> 
+	</tr> 
+	<tr> 
+		<td align="left">60</td> 
+		<td align="left"><a href = "/48/403">Sabine County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">27.53</td> 
+	</tr> 
+	<tr> 
+		<td align="left">61</td> 
+		<td align="left"><a href = "/12/71">Lee County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">27.48</td> 
+	</tr> 
+	<tr> 
+		<td align="left">62</td> 
+		<td align="left"><a href = "/37/175">Transylvania County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">27.44</td> 
+	</tr> 
+	<tr> 
+		<td align="left">63</td> 
+		<td align="left"><a href = "/46/89">McPherson County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">27.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">64</td> 
+		<td align="left"><a href = "/12/53">Hernando County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">27.36</td> 
+	</tr> 
+	<tr> 
+		<td align="left">65</td> 
+		<td align="left"><a href = "/38/37">Grant County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">27.32</td> 
+	</tr> 
+	<tr> 
+		<td align="left">66</td> 
+		<td align="left"><a href = "/29/15">Benton County</a></td> 
+		<td align="left"> Missouri</td> 
+		<td align="right">27.25</td> 
+	</tr> 
+	<tr> 
+		<td align="left">67</td> 
+		<td align="left"><a href = "/48/319">Mason County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">27.22</td> 
+	</tr> 
+	<tr> 
+		<td align="left">68</td> 
+		<td align="left"><a href = "/48/7">Aransas County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">27.21</td> 
+	</tr> 
+	<tr> 
+		<td align="left">69</td> 
+		<td align="left"><a href = "/48/101">Cottle County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">27.18</td> 
+	</tr> 
+	<tr> 
+		<td align="left">70</td> 
+		<td align="left"><a href = "/26/69">Iosco County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">27.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">71</td> 
+		<td align="left"><a href = "/26/71">Iron County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">27.12</td> 
+	</tr> 
+	<tr> 
+		<td align="left">72</td> 
+		<td align="left"><a href = "/37/43">Clay County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">27.11</td> 
+	</tr> 
+	<tr> 
+		<td align="left">73</td> 
+		<td align="left"><a href = "/26/89">Leelanau County</a></td> 
+		<td align="left"> Michigan</td> 
+		<td align="right">27.06</td> 
+	</tr> 
+	<tr> 
+		<td align="left">74</td> 
+		<td align="left"><a href = "/48/447">Throckmorton County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">27.06</td> 
+	</tr> 
+	<tr> 
+		<td align="left">75</td> 
+		<td align="left"><a href = "/48/267">Kimble County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">27.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">76</td> 
+		<td align="left"><a href = "/20/153">Rawlins County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">26.99</td> 
+	</tr> 
+	<tr> 
+		<td align="left">77</td> 
+		<td align="left"><a href = "/25/1">Barnstable County</a></td> 
+		<td align="left"> Massachusetts</td> 
+		<td align="right">26.92</td> 
+	</tr> 
+	<tr> 
+		<td align="left">78</td> 
+		<td align="left"><a href = "/20/39">Decatur County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">26.92</td> 
+	</tr> 
+	<tr> 
+		<td align="left">79</td> 
+		<td align="left"><a href = "/38/41">Hettinger County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">26.77</td> 
+	</tr> 
+	<tr> 
+		<td align="left">80</td> 
+		<td align="left"><a href = "/37/149">Polk County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">26.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">81</td> 
+		<td align="left"><a href = "/12/69">Lake County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">26.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">82</td> 
+		<td align="left"><a href = "/12/81">Manatee County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">26.57</td> 
+	</tr> 
+	<tr> 
+		<td align="left">83</td> 
+		<td align="left"><a href = "/53/9">Clallam County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">26.56</td> 
+	</tr> 
+	<tr> 
+		<td align="left">84</td> 
+		<td align="left"><a href = "/30/19">Daniels County</a></td> 
+		<td align="left"> Montana</td> 
+		<td align="right">26.56</td> 
+	</tr> 
+	<tr> 
+		<td align="left">85</td> 
+		<td align="left"><a href = "/46/107">Potter County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">26.49</td> 
+	</tr> 
+	<tr> 
+		<td align="left">86</td> 
+		<td align="left"><a href = "/53/49">Pacific County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">26.48</td> 
+	</tr> 
+	<tr> 
+		<td align="left">87</td> 
+		<td align="left"><a href = "/48/499">Wood County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">26.48</td> 
+	</tr> 
+	<tr> 
+		<td align="left">88</td> 
+		<td align="left"><a href = "/48/265">Kerr County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">26.42</td> 
+	</tr> 
+	<tr> 
+		<td align="left">89</td> 
+		<td align="left"><a href = "/48/155">Foard County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">26.35</td> 
+	</tr> 
+	<tr> 
+		<td align="left">90</td> 
+		<td align="left"><a href = "/20/23">Cheyenne County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">26.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">91</td> 
+		<td align="left"><a href = "/42/113">Sullivan County</a></td> 
+		<td align="left"> Pennsylvania</td> 
+		<td align="right">26.29</td> 
+	</tr> 
+	<tr> 
+		<td align="left">92</td> 
+		<td align="left"><a href = "/4/15">Mohave County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">26.29</td> 
+	</tr> 
+	<tr> 
+		<td align="left">93</td> 
+		<td align="left"><a href = "/20/157">Republic County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">26.22</td> 
+	</tr> 
+	<tr> 
+		<td align="left">94</td> 
+		<td align="left"><a href = "/38/29">Emmons County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">26.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">95</td> 
+		<td align="left"><a href = "/30/109">Wibaux County</a></td> 
+		<td align="left"> Montana</td> 
+		<td align="right">26.16</td> 
+	</tr> 
+	<tr> 
+		<td align="left">96</td> 
+		<td align="left"><a href = "/48/243">Jeff Davis County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">26.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">97</td> 
+		<td align="left"><a href = "/37/113">Macon County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">26.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">98</td> 
+		<td align="left"><a href = "/20/183">Smith County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">25.93</td> 
+	</tr> 
+	<tr> 
+		<td align="left">99</td> 
+		<td align="left"><a href = "/48/81">Coke County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">25.84</td> 
+	</tr> 
+	<tr> 
+		<td align="left">100</td> 
+		<td align="left"><a href = "/32/23">Nye County</a></td> 
+		<td align="left"> Nevada</td> 
+		<td align="right">25.82</td> 
+	</tr> 
+	</table>
+	</div>
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12"><font color = "black">
+                <h1 align="center">List of Counties with the Lowest Share of 65+ People</font></h1>
+            </div>
+        </div>
+    </div>
+    <div>
+                    <table align = center class = "table" width = "70%" border = "1" frame = "void" 
+        			   rules = "rows">
+            		<thead>
+            			<th style="text-align: left;"><font size = "-1">Rank</font></th>
+            			<th style="text-align: left;"><font size = "-1">County</font></th>
+            			<th style="text-align: left;"><font size = "-1">State</font></th>
+            			<th style="text-align: right;"><font size = "-1">Share Aged 65+</font></th>
+            		</thead> 
+
+                     	<tr> 
+		<td align="left">1</td> 
+		<td align="left"><a href = "/2/185">North Slope Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">4.84</td> 
+	</tr> 
+	<tr> 
+		<td align="left">2</td> 
+		<td align="left"><a href = "/2/16">Aleutians West Census Area</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">5.39</td> 
+	</tr> 
+	<tr> 
+		<td align="left">3</td> 
+		<td align="left"><a href = "/16/65">Madison County</a></td> 
+		<td align="left"> Idaho</td> 
+		<td align="right">6.17</td> 
+	</tr> 
+	<tr> 
+		<td align="left">4</td> 
+		<td align="left"><a href = "/2/50">Bethel Census Area</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">6.77</td> 
+	</tr> 
+	<tr> 
+		<td align="left">5</td> 
+		<td align="left"><a href = "/2/188">Northwest Arctic Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">6.87</td> 
+	</tr> 
+	<tr> 
+		<td align="left">6</td> 
+		<td align="left"><a href = "/56/5">Campbell County</a></td> 
+		<td align="left"> Wyoming</td> 
+		<td align="right">6.88</td> 
+	</tr> 
+	<tr> 
+		<td align="left">7</td> 
+		<td align="left"><a href = "/2/60">Bristol Bay Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">6.92</td> 
+	</tr> 
+	<tr> 
+		<td align="left">8</td> 
+		<td align="left"><a href = "/46/137">Ziebach County</a></td> 
+		<td align="left"> South Dakota</td> 
+		<td align="right">7.03</td> 
+	</tr> 
+	<tr> 
+		<td align="left">9</td> 
+		<td align="left"><a href = "/13/179">Liberty County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">7.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">10</td> 
+		<td align="left"><a href = "/29/169">Pulaski County</a></td> 
+		<td align="left"> Missouri</td> 
+		<td align="right">7.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">11</td> 
+		<td align="left"><a href = "/51/685">Manassas Park city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">7.41</td> 
+	</tr> 
+	<tr> 
+		<td align="left">12</td> 
+		<td align="left"><a href = "/49/49">Utah County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">7.44</td> 
+	</tr> 
+	<tr> 
+		<td align="left">13</td> 
+		<td align="left"><a href = "/2/180">Nome Census Area</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">7.45</td> 
+	</tr> 
+	<tr> 
+		<td align="left">14</td> 
+		<td align="left"><a href = "/8/37">Eagle County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">7.49</td> 
+	</tr> 
+	<tr> 
+		<td align="left">15</td> 
+		<td align="left"><a href = "/2/90">Fairbanks North Star Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">7.71</td> 
+	</tr> 
+	<tr> 
+		<td align="left">16</td> 
+		<td align="left"><a href = "/38/85">Sioux County</a></td> 
+		<td align="left"> North Dakota</td> 
+		<td align="right">7.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">17</td> 
+		<td align="left"><a href = "/16/81">Teton County</a></td> 
+		<td align="left"> Idaho</td> 
+		<td align="right">7.84</td> 
+	</tr> 
+	<tr> 
+		<td align="left">18</td> 
+		<td align="left"><a href = "/2/70">Dillingham Census Area</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">7.98</td> 
+	</tr> 
+	<tr> 
+		<td align="left">19</td> 
+		<td align="left"><a href = "/20/61">Geary County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">7.99</td> 
+	</tr> 
+	<tr> 
+		<td align="left">20</td> 
+		<td align="left"><a href = "/13/63">Clayton County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">8.06</td> 
+	</tr> 
+	<tr> 
+		<td align="left">21</td> 
+		<td align="left"><a href = "/20/161">Riley County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">8.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">22</td> 
+		<td align="left"><a href = "/2/150">Kodiak Island Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">8.11</td> 
+	</tr> 
+	<tr> 
+		<td align="left">23</td> 
+		<td align="left"><a href = "/51/660">Harrisonburg city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">8.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">24</td> 
+		<td align="left"><a href = "/51/750">Radford city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">8.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">25</td> 
+		<td align="left"><a href = "/17/93">Kendall County</a></td> 
+		<td align="left"> Illinois</td> 
+		<td align="right">8.36</td> 
+	</tr> 
+	<tr> 
+		<td align="left">26</td> 
+		<td align="left"><a href = "/48/41">Brazos County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">8.42</td> 
+	</tr> 
+	<tr> 
+		<td align="left">27</td> 
+		<td align="left"><a href = "/49/45">Tooele County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">8.45</td> 
+	</tr> 
+	<tr> 
+		<td align="left">28</td> 
+		<td align="left"><a href = "/48/111">Dallam County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">8.52</td> 
+	</tr> 
+	<tr> 
+		<td align="left">29</td> 
+		<td align="left"><a href = "/37/93">Hoke County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">8.52</td> 
+	</tr> 
+	<tr> 
+		<td align="left">30</td> 
+		<td align="left"><a href = "/37/133">Onslow County</a></td> 
+		<td align="left"> North Carolina</td> 
+		<td align="right">8.55</td> 
+	</tr> 
+	<tr> 
+		<td align="left">31</td> 
+		<td align="left"><a href = "/51/107">Loudoun County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">8.56</td> 
+	</tr> 
+	<tr> 
+		<td align="left">32</td> 
+		<td align="left"><a href = "/53/21">Franklin County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">8.58</td> 
+	</tr> 
+	<tr> 
+		<td align="left">33</td> 
+		<td align="left"><a href = "/48/99">Coryell County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">8.58</td> 
+	</tr> 
+	<tr> 
+		<td align="left">34</td> 
+		<td align="left"><a href = "/51/153">Prince William County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">8.59</td> 
+	</tr> 
+	<tr> 
+		<td align="left">35</td> 
+		<td align="left"><a href = "/49/5">Cache County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">8.6</td> 
+	</tr> 
+	<tr> 
+		<td align="left">36</td> 
+		<td align="left"><a href = "/6/31">Kings County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">8.64</td> 
+	</tr> 
+	<tr> 
+		<td align="left">37</td> 
+		<td align="left"><a href = "/20/175">Seward County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">8.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">38</td> 
+		<td align="left"><a href = "/13/135">Gwinnett County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">8.71</td> 
+	</tr> 
+	<tr> 
+		<td align="left">39</td> 
+		<td align="left"><a href = "/2/20">Anchorage Municipality</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">8.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">40</td> 
+		<td align="left"><a href = "/51/683">Manassas city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">8.74</td> 
+	</tr> 
+	<tr> 
+		<td align="left">41</td> 
+		<td align="left"><a href = "/48/479">Webb County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">8.81</td> 
+	</tr> 
+	<tr> 
+		<td align="left">42</td> 
+		<td align="left"><a href = "/48/453">Travis County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">8.91</td> 
+	</tr> 
+	<tr> 
+		<td align="left">43</td> 
+		<td align="left"><a href = "/13/183">Long County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">8.99</td> 
+	</tr> 
+	<tr> 
+		<td align="left">44</td> 
+		<td align="left"><a href = "/47/125">Montgomery County</a></td> 
+		<td align="left"> Tennessee</td> 
+		<td align="right">9.06</td> 
+	</tr> 
+	<tr> 
+		<td align="left">45</td> 
+		<td align="left"><a href = "/13/223">Paulding County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">9.11</td> 
+	</tr> 
+	<tr> 
+		<td align="left">46</td> 
+		<td align="left"><a href = "/48/121">Denton County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">9.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">47</td> 
+		<td align="left"><a href = "/51/179">Stafford County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">9.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">48</td> 
+		<td align="left"><a href = "/20/55">Finney County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">9.28</td> 
+	</tr> 
+	<tr> 
+		<td align="left">49</td> 
+		<td align="left"><a href = "/56/37">Sweetwater County</a></td> 
+		<td align="left"> Wyoming</td> 
+		<td align="right">9.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">50</td> 
+		<td align="left"><a href = "/49/11">Davis County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">9.39</td> 
+	</tr> 
+	<tr> 
+		<td align="left">51</td> 
+		<td align="left"><a href = "/27/139">Scott County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">9.42</td> 
+	</tr> 
+	<tr> 
+		<td align="left">52</td> 
+		<td align="left"><a href = "/56/1">Albany County</a></td> 
+		<td align="left"> Wyoming</td> 
+		<td align="right">9.47</td> 
+	</tr> 
+	<tr> 
+		<td align="left">53</td> 
+		<td align="left"><a href = "/32/7">Elko County</a></td> 
+		<td align="left"> Nevada</td> 
+		<td align="right">9.49</td> 
+	</tr> 
+	<tr> 
+		<td align="left">54</td> 
+		<td align="left"><a href = "/48/201">Harris County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">9.52</td> 
+	</tr> 
+	<tr> 
+		<td align="left">55</td> 
+		<td align="left"><a href = "/8/65">Lake County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">9.52</td> 
+	</tr> 
+	<tr> 
+		<td align="left">56</td> 
+		<td align="left"><a href = "/51/540">Charlottesville city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">9.53</td> 
+	</tr> 
+	<tr> 
+		<td align="left">57</td> 
+		<td align="left"><a href = "/13/59">Clarke County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">9.58</td> 
+	</tr> 
+	<tr> 
+		<td align="left">58</td> 
+		<td align="left"><a href = "/48/341">Moore County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">9.71</td> 
+	</tr> 
+	<tr> 
+		<td align="left">59</td> 
+		<td align="left"><a href = "/2/261">Valdez-Cordova Census Area</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">9.72</td> 
+	</tr> 
+	<tr> 
+		<td align="left">60</td> 
+		<td align="left"><a href = "/27/141">Sherburne County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">9.74</td> 
+	</tr> 
+	<tr> 
+		<td align="left">61</td> 
+		<td align="left"><a href = "/51/13">Arlington County</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">9.79</td> 
+	</tr> 
+	<tr> 
+		<td align="left">62</td> 
+		<td align="left"><a href = "/49/35">Salt Lake County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">9.79</td> 
+	</tr> 
+	<tr> 
+		<td align="left">63</td> 
+		<td align="left"><a href = "/2/170">Matanuska-Susitna Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">9.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">64</td> 
+		<td align="left"><a href = "/49/43">Summit County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">9.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">65</td> 
+		<td align="left"><a href = "/20/67">Grant County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">9.84</td> 
+	</tr> 
+	<tr> 
+		<td align="left">66</td> 
+		<td align="left"><a href = "/51/710">Norfolk city</a></td> 
+		<td align="left"> Virginia</td> 
+		<td align="right">9.84</td> 
+	</tr> 
+	<tr> 
+		<td align="left">67</td> 
+		<td align="left"><a href = "/28/143">Tunica County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">9.85</td> 
+	</tr> 
+	<tr> 
+		<td align="left">68</td> 
+		<td align="left"><a href = "/8/1">Adams County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">9.87</td> 
+	</tr> 
+	<tr> 
+		<td align="left">69</td> 
+		<td align="left"><a href = "/48/113">Dallas County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">9.89</td> 
+	</tr> 
+	<tr> 
+		<td align="left">70</td> 
+		<td align="left"><a href = "/8/35">Douglas County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">9.91</td> 
+	</tr> 
+	<tr> 
+		<td align="left">71</td> 
+		<td align="left"><a href = "/6/29">Kern County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">9.93</td> 
+	</tr> 
+	<tr> 
+		<td align="left">72</td> 
+		<td align="left"><a href = "/47/149">Rutherford County</a></td> 
+		<td align="left"> Tennessee</td> 
+		<td align="right">9.95</td> 
+	</tr> 
+	<tr> 
+		<td align="left">73</td> 
+		<td align="left"><a href = "/8/117">Summit County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">10.01</td> 
+	</tr> 
+	<tr> 
+		<td align="left">74</td> 
+		<td align="left"><a href = "/48/27">Bell County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">10.01</td> 
+	</tr> 
+	<tr> 
+		<td align="left">75</td> 
+		<td align="left"><a href = "/49/47">Uintah County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">10.01</td> 
+	</tr> 
+	<tr> 
+		<td align="left">76</td> 
+		<td align="left"><a href = "/27/19">Carver County</a></td> 
+		<td align="left"> Minnesota</td> 
+		<td align="right">10.06</td> 
+	</tr> 
+	<tr> 
+		<td align="left">77</td> 
+		<td align="left"><a href = "/48/157">Fort Bend County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">10.08</td> 
+	</tr> 
+	<tr> 
+		<td align="left">78</td> 
+		<td align="left"><a href = "/19/103">Johnson County</a></td> 
+		<td align="left"> Iowa</td> 
+		<td align="right">10.1</td> 
+	</tr> 
+	<tr> 
+		<td align="left">79</td> 
+		<td align="left"><a href = "/2/110">Juneau City and Borough</a></td> 
+		<td align="left"> Alaska</td> 
+		<td align="right">10.11</td> 
+	</tr> 
+	<tr> 
+		<td align="left">80</td> 
+		<td align="left"><a href = "/48/165">Gaines County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">10.11</td> 
+	</tr> 
+	<tr> 
+		<td align="left">81</td> 
+		<td align="left"><a href = "/53/75">Whitman County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">10.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">82</td> 
+		<td align="left"><a href = "/56/41">Uinta County</a></td> 
+		<td align="left"> Wyoming</td> 
+		<td align="right">10.15</td> 
+	</tr> 
+	<tr> 
+		<td align="left">83</td> 
+		<td align="left"><a href = "/48/85">Collin County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">10.17</td> 
+	</tr> 
+	<tr> 
+		<td align="left">84</td> 
+		<td align="left"><a href = "/13/31">Bulloch County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">10.17</td> 
+	</tr> 
+	<tr> 
+		<td align="left">85</td> 
+		<td align="left"><a href = "/22/115">Vernon Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">10.18</td> 
+	</tr> 
+	<tr> 
+		<td align="left">86</td> 
+		<td align="left"><a href = "/8/47">Gilpin County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">10.18</td> 
+	</tr> 
+	<tr> 
+		<td align="left">87</td> 
+		<td align="left"><a href = "/13/97">Douglas County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">10.19</td> 
+	</tr> 
+	<tr> 
+		<td align="left">88</td> 
+		<td align="left"><a href = "/32/13">Humboldt County</a></td> 
+		<td align="left"> Nevada</td> 
+		<td align="right">10.19</td> 
+	</tr> 
+	<tr> 
+		<td align="left">89</td> 
+		<td align="left"><a href = "/28/105">Oktibbeha County</a></td> 
+		<td align="left"> Mississippi</td> 
+		<td align="right">10.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">90</td> 
+		<td align="left"><a href = "/8/45">Garfield County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">10.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">91</td> 
+		<td align="left"><a href = "/48/169">Garza County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">10.22</td> 
+	</tr> 
+	<tr> 
+		<td align="left">92</td> 
+		<td align="left"><a href = "/6/71">San Bernardino County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">10.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">93</td> 
+		<td align="left"><a href = "/8/113">San Miguel County</a></td> 
+		<td align="left"> Colorado</td> 
+		<td align="right">10.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">94</td> 
+		<td align="left"><a href = "/13/89">DeKalb County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">10.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">95</td> 
+		<td align="left"><a href = "/13/151">Henry County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">10.28</td> 
+	</tr> 
+	<tr> 
+		<td align="left">96</td> 
+		<td align="left"><a href = "/53/1">Adams County</a></td> 
+		<td align="left"> Washington</td> 
+		<td align="right">10.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">97</td> 
+		<td align="left"><a href = "/13/177">Lee County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">10.31</td> 
+	</tr> 
+	<tr> 
+		<td align="left">98</td> 
+		<td align="left"><a href = "/49/51">Wasatch County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">10.34</td> 
+	</tr> 
+	<tr> 
+		<td align="left">99</td> 
+		<td align="left"><a href = "/20/45">Douglas County</a></td> 
+		<td align="left"> Kansas</td> 
+		<td align="right">10.38</td> 
+	</tr> 
+	<tr> 
+		<td align="left">100</td> 
+		<td align="left"><a href = "/31/153">Sarpy County</a></td> 
+		<td align="left"> Nebraska</td> 
+		<td align="right">10.39</td> 
+	</tr> 
+	</table>
+	</div>
+            <style>
+        .table { 
+            border-bottom: 1px; 
+            text-color: black; 
+            text-align: center; 
+            font-family: Montserrat,sans-serif; 
+            border-top: 1px solid black;
+            font-size: 12px;
+        }
+        .table th { border: 0px }
+        .table td {
+            border: none;
+        }
+        .table tr{
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            border-collapse: collapse;
+        }
+        .fixed-table-container { border:0px ; }
+        .table_header { font-size: 13px; text-align: center; }
+        </style>
+
+    </body>
+    </html>
+    

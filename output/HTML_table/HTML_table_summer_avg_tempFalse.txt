@@ -1,0 +1,612 @@
+<div>
+                    <table align = center class = "table" width = "70%" border = "1" frame = "void" 
+        			   rules = "rows">
+            		<thead>
+            			<th style="text-align: left;"><font size = "-1">Rank</font></th>
+            			<th style="text-align: left;"><font size = "-1">County</font></th>
+            			<th style="text-align: left;"><font size = "-1">State</font></th>
+            			<th style="text-align: right;"><font size = "-1">Summer Average Temperature (F)</font></th>
+            		</thead> 
+
+                  	<tr> 
+		<td align="left">1</td> 
+		<td align="left"><a href = "/6/27">Inyo County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">98.7</td> 
+	</tr> 
+	<tr> 
+		<td align="left">2</td> 
+		<td align="left"><a href = "/4/12">La Paz County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">92.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">3</td> 
+		<td align="left"><a href = "/6/71">San Bernardino County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">91.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">4</td> 
+		<td align="left"><a href = "/4/27">Yuma County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">90.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">5</td> 
+		<td align="left"><a href = "/6/65">Riverside County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">90.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">6</td> 
+		<td align="left"><a href = "/4/13">Maricopa County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">89.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">7</td> 
+		<td align="left"><a href = "/6/25">Imperial County</a></td> 
+		<td align="left"> California</td> 
+		<td align="right">89.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">8</td> 
+		<td align="left"><a href = "/4/21">Pinal County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">88.87</td> 
+	</tr> 
+	<tr> 
+		<td align="left">9</td> 
+		<td align="left"><a href = "/32/3">Clark County</a></td> 
+		<td align="left"> Nevada</td> 
+		<td align="right">88.77</td> 
+	</tr> 
+	<tr> 
+		<td align="left">10</td> 
+		<td align="left"><a href = "/48/505">Zapata County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">86.77</td> 
+	</tr> 
+	<tr> 
+		<td align="left">11</td> 
+		<td align="left"><a href = "/4/15">Mohave County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">86.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">12</td> 
+		<td align="left"><a href = "/48/427">Starr County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">86.7</td> 
+	</tr> 
+	<tr> 
+		<td align="left">13</td> 
+		<td align="left"><a href = "/48/479">Webb County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">86.27</td> 
+	</tr> 
+	<tr> 
+		<td align="left">14</td> 
+		<td align="left"><a href = "/48/323">Maverick County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">86.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">15</td> 
+		<td align="left"><a href = "/48/507">Zavala County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">86.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">16</td> 
+		<td align="left"><a href = "/48/283">La Salle County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">86.1</td> 
+	</tr> 
+	<tr> 
+		<td align="left">17</td> 
+		<td align="left"><a href = "/48/127">Dimmit County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">85.9</td> 
+	</tr> 
+	<tr> 
+		<td align="left">18</td> 
+		<td align="left"><a href = "/48/215">Hidalgo County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">85.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">19</td> 
+		<td align="left"><a href = "/49/53">Washington County</a></td> 
+		<td align="left"> Utah</td> 
+		<td align="right">85.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">20</td> 
+		<td align="left"><a href = "/48/113">Dallas County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">85.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">21</td> 
+		<td align="left"><a href = "/48/247">Jim Hogg County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">85.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">22</td> 
+		<td align="left"><a href = "/4/11">Greenlee County</a></td> 
+		<td align="left"> Arizona</td> 
+		<td align="right">84.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">23</td> 
+		<td align="left"><a href = "/48/249">Jim Wells County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">24</td> 
+		<td align="left"><a href = "/48/61">Cameron County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">25</td> 
+		<td align="left"><a href = "/48/7">Aransas County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">26</td> 
+		<td align="left"><a href = "/48/311">McMullen County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">27</td> 
+		<td align="left"><a href = "/48/131">Duval County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.5</td> 
+	</tr> 
+	<tr> 
+		<td align="left">28</td> 
+		<td align="left"><a href = "/48/273">Kleberg County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.5</td> 
+	</tr> 
+	<tr> 
+		<td align="left">29</td> 
+		<td align="left"><a href = "/48/47">Brooks County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">30</td> 
+		<td align="left"><a href = "/48/355">Nueces County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.3</td> 
+	</tr> 
+	<tr> 
+		<td align="left">31</td> 
+		<td align="left"><a href = "/48/13">Atascosa County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">32</td> 
+		<td align="left"><a href = "/48/297">Live Oak County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.2</td> 
+	</tr> 
+	<tr> 
+		<td align="left">33</td> 
+		<td align="left"><a href = "/48/469">Victoria County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.17</td> 
+	</tr> 
+	<tr> 
+		<td align="left">34</td> 
+		<td align="left"><a href = "/48/167">Galveston County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">35</td> 
+		<td align="left"><a href = "/48/463">Uvalde County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.1</td> 
+	</tr> 
+	<tr> 
+		<td align="left">36</td> 
+		<td align="left"><a href = "/48/41">Brazos County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">84.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">37</td> 
+		<td align="left"><a href = "/48/409">San Patricio County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.93</td> 
+	</tr> 
+	<tr> 
+		<td align="left">38</td> 
+		<td align="left"><a href = "/48/201">Harris County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">39</td> 
+		<td align="left"><a href = "/48/299">Llano County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">40</td> 
+		<td align="left"><a href = "/48/43">Brewster County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">41</td> 
+		<td align="left"><a href = "/22/71">Orleans Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">83.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">42</td> 
+		<td align="left"><a href = "/48/239">Jackson County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.7</td> 
+	</tr> 
+	<tr> 
+		<td align="left">43</td> 
+		<td align="left"><a href = "/48/309">McLennan County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.67</td> 
+	</tr> 
+	<tr> 
+		<td align="left">44</td> 
+		<td align="left"><a href = "/48/493">Wilson County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.6</td> 
+	</tr> 
+	<tr> 
+		<td align="left">45</td> 
+		<td align="left"><a href = "/48/255">Karnes County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.57</td> 
+	</tr> 
+	<tr> 
+		<td align="left">46</td> 
+		<td align="left"><a href = "/48/231">Hunt County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.57</td> 
+	</tr> 
+	<tr> 
+		<td align="left">47</td> 
+		<td align="left"><a href = "/48/149">Fayette County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.57</td> 
+	</tr> 
+	<tr> 
+		<td align="left">48</td> 
+		<td align="left"><a href = "/48/465">Val Verde County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.47</td> 
+	</tr> 
+	<tr> 
+		<td align="left">49</td> 
+		<td align="left"><a href = "/48/89">Colorado County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.47</td> 
+	</tr> 
+	<tr> 
+		<td align="left">50</td> 
+		<td align="left"><a href = "/48/471">Walker County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.47</td> 
+	</tr> 
+	<tr> 
+		<td align="left">51</td> 
+		<td align="left"><a href = "/48/489">Willacy County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.43</td> 
+	</tr> 
+	<tr> 
+		<td align="left">52</td> 
+		<td align="left"><a href = "/48/123">DeWitt County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.43</td> 
+	</tr> 
+	<tr> 
+		<td align="left">53</td> 
+		<td align="left"><a href = "/48/439">Tarrant County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">54</td> 
+		<td align="left"><a href = "/48/25">Bee County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.37</td> 
+	</tr> 
+	<tr> 
+		<td align="left">55</td> 
+		<td align="left"><a href = "/48/325">Medina County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.33</td> 
+	</tr> 
+	<tr> 
+		<td align="left">56</td> 
+		<td align="left"><a href = "/48/175">Goliad County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">57</td> 
+		<td align="left"><a href = "/48/373">Polk County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">58</td> 
+		<td align="left"><a href = "/48/277">Lamar County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.23</td> 
+	</tr> 
+	<tr> 
+		<td align="left">59</td> 
+		<td align="left"><a href = "/48/187">Guadalupe County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.17</td> 
+	</tr> 
+	<tr> 
+		<td align="left">60</td> 
+		<td align="left"><a href = "/48/21">Bastrop County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">61</td> 
+		<td align="left"><a href = "/22/23">Cameron Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">83.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">62</td> 
+		<td align="left"><a href = "/48/155">Foard County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">63</td> 
+		<td align="left"><a href = "/22/69">Natchitoches Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">83.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">64</td> 
+		<td align="left"><a href = "/22/39">Evangeline Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">83.13</td> 
+	</tr> 
+	<tr> 
+		<td align="left">65</td> 
+		<td align="left"><a href = "/48/177">Gonzales County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.1</td> 
+	</tr> 
+	<tr> 
+		<td align="left">66</td> 
+		<td align="left"><a href = "/48/57">Calhoun County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.1</td> 
+	</tr> 
+	<tr> 
+		<td align="left">67</td> 
+		<td align="left"><a href = "/48/477">Washington County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.1</td> 
+	</tr> 
+	<tr> 
+		<td align="left">68</td> 
+		<td align="left"><a href = "/48/461">Upton County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">69</td> 
+		<td align="left"><a href = "/12/95">Orange County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">83.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">70</td> 
+		<td align="left"><a href = "/48/121">Denton County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.07</td> 
+	</tr> 
+	<tr> 
+		<td align="left">71</td> 
+		<td align="left"><a href = "/12/71">Lee County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">83.03</td> 
+	</tr> 
+	<tr> 
+		<td align="left">72</td> 
+		<td align="left"><a href = "/12/49">Hardee County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">83.03</td> 
+	</tr> 
+	<tr> 
+		<td align="left">73</td> 
+		<td align="left"><a href = "/12/43">Glades County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">83.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">74</td> 
+		<td align="left"><a href = "/12/11">Broward County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">83.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">75</td> 
+		<td align="left"><a href = "/48/27">Bell County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">76</td> 
+		<td align="left"><a href = "/48/285">Lavaca County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">77</td> 
+		<td align="left"><a href = "/48/29">Bexar County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">83.0</td> 
+	</tr> 
+	<tr> 
+		<td align="left">78</td> 
+		<td align="left"><a href = "/48/397">Rockwall County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.97</td> 
+	</tr> 
+	<tr> 
+		<td align="left">79</td> 
+		<td align="left"><a href = "/48/343">Morris County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.97</td> 
+	</tr> 
+	<tr> 
+		<td align="left">80</td> 
+		<td align="left"><a href = "/48/51">Burleson County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.97</td> 
+	</tr> 
+	<tr> 
+		<td align="left">81</td> 
+		<td align="left"><a href = "/48/429">Stephens County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.93</td> 
+	</tr> 
+	<tr> 
+		<td align="left">82</td> 
+		<td align="left"><a href = "/48/35">Bosque County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.93</td> 
+	</tr> 
+	<tr> 
+		<td align="left">83</td> 
+		<td align="left"><a href = "/12/103">Pinellas County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">82.93</td> 
+	</tr> 
+	<tr> 
+		<td align="left">84</td> 
+		<td align="left"><a href = "/13/49">Charlton County</a></td> 
+		<td align="left"> Georgia</td> 
+		<td align="right">82.9</td> 
+	</tr> 
+	<tr> 
+		<td align="left">85</td> 
+		<td align="left"><a href = "/12/105">Polk County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">82.9</td> 
+	</tr> 
+	<tr> 
+		<td align="left">86</td> 
+		<td align="left"><a href = "/48/281">Lampasas County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.87</td> 
+	</tr> 
+	<tr> 
+		<td align="left">87</td> 
+		<td align="left"><a href = "/12/87">Monroe County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">82.87</td> 
+	</tr> 
+	<tr> 
+		<td align="left">88</td> 
+		<td align="left"><a href = "/48/55">Caldwell County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">89</td> 
+		<td align="left"><a href = "/48/443">Terrell County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">90</td> 
+		<td align="left"><a href = "/40/141">Tillman County</a></td> 
+		<td align="left"> Oklahoma</td> 
+		<td align="right">82.83</td> 
+	</tr> 
+	<tr> 
+		<td align="left">91</td> 
+		<td align="left"><a href = "/12/57">Hillsborough County</a></td> 
+		<td align="left"> Florida</td> 
+		<td align="right">82.8</td> 
+	</tr> 
+	<tr> 
+		<td align="left">92</td> 
+		<td align="left"><a href = "/48/23">Baylor County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.77</td> 
+	</tr> 
+	<tr> 
+		<td align="left">93</td> 
+		<td align="left"><a href = "/48/9">Archer County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">94</td> 
+		<td align="left"><a href = "/48/253">Jones County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">95</td> 
+		<td align="left"><a href = "/48/411">San Saba County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.73</td> 
+	</tr> 
+	<tr> 
+		<td align="left">96</td> 
+		<td align="left"><a href = "/22/89">St. Charles Parish</a></td> 
+		<td align="left"> Louisiana</td> 
+		<td align="right">82.7</td> 
+	</tr> 
+	<tr> 
+		<td align="left">97</td> 
+		<td align="left"><a href = "/48/487">Wilbarger County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.7</td> 
+	</tr> 
+	<tr> 
+		<td align="left">98</td> 
+		<td align="left"><a href = "/48/453">Travis County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.7</td> 
+	</tr> 
+	<tr> 
+		<td align="left">99</td> 
+		<td align="left"><a href = "/48/363">Palo Pinto County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.7</td> 
+	</tr> 
+	<tr> 
+		<td align="left">100</td> 
+		<td align="left"><a href = "/48/395">Robertson County</a></td> 
+		<td align="left"> Texas</td> 
+		<td align="right">82.7</td> 
+	</tr> 
+	</table>
+	</div>
